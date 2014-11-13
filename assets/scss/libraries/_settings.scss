@@ -45,7 +45,7 @@ $row-width: 100%;
 // $font-weight-bold: bold !default
 
 // We use these to control various global styles
-$body-bg: #f3f3f3;
+$body-bg: url("/assets/images/bg.png") 0 0 #111;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -1090,7 +1090,7 @@ $fieldset-padding: rem-calc(5 20);
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: #fff;
+$table-bg: #303030;
 // $table-even-row-bg: #f9f9f9  ;
 
 // These control the table cell border style
