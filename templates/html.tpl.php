@@ -32,7 +32,7 @@
       }
 
       void setup() {
-        size(2560, 1200);
+        size(2560, 1440);
         background(255);
         smooth();
         rectMode(CENTER_DIAMETER);
@@ -50,7 +50,7 @@
 
       void draw() {
         if(doClear) {
-          background(30,30,30);
+          background(20,20,20);
           doClear=false;
         }
 
