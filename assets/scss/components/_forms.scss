@@ -247,3 +247,18 @@ div.vertical-tabs{
     display:inline-block;
   }
 }
+
+// button styles
+button, .button {
+  color: $dkgray;
+  &:hover {
+    color: #000;
+  }
+}
+
+
+
+
+
+
+

@@ -140,6 +140,8 @@ body{
 }
 
 .breadcrumbs{
+  background: #000;
+  border-color: $dkgray;
   margin:rem-calc(10 0 0);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -162,6 +164,10 @@ body{
 .admin-list{
   margin-bottom:rem-calc(-20);
 
+  > li {
+    padding: rem-calc(0 0 10 0)
+  }
+
   .panel{
     margin:0;
     @include transition(all 0.2s ease-in-out 0s);
@@ -172,16 +178,15 @@ body{
   }
 
   a{
-    text-shadow: 0 -1px 0 #fff;
-    background:#fafafa;
-    border:1px solid #e9e9e9;
+    color: $primary-color;
+    background: $dkgray;
     padding: rem-calc(0 20 20);
     display:block;
     @include transition(all 0.2s ease-in-out 0s);
     overflow:hidden;
 
     &:hover{
-      background:#fff;
+      background:#000;
       border-color:#fff;
 
       .icon{
@@ -208,7 +213,7 @@ body{
   .title{
     font-size:rem-calc(16);
     font-weight:600;
-    color:#767676;
+    color: lighten($dkgray, 40%);
     text-align: center;
   }
 
