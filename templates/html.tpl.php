@@ -11,6 +11,7 @@
   <?php print $extra; ?>
   <?php if(!theme_get_setting('fett_js_footer')) print $scripts; ?>
   <link href='http://fonts.googleapis.com/css?family=Ropa+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div class="skip-link">

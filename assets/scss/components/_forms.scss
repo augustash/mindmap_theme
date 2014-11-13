@@ -34,7 +34,7 @@ form{
   .form-radios{
     input[type="checkbox"] + label,
     input[type="radio"] + label{
-      margin-left:0;
+      
     }
   }
 
@@ -257,6 +257,36 @@ button, .button {
 }
 
 
+// general form styles
+fieldset legend {
+  background: #333 image-url('noise.png') repeat;
+  color: #ccc;
+  font-weight: 400;
+  font-size: rem-calc(14);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
+  background-color: $dkgray;
+  border-color: darken($dkgray, 5%);
+  color: $text;
+  &:focus {
+    background: darken($dkgray, 5%);
+    border-color: darken($dkgray, 10%);
+    box-shadow: none;
+  }
+}
+select {
+  &:hover {
+    background-color: darken($dkgray, 5%);
+    border-color: darken($dkgray, 10%);
+  }
+}
+
+label {
+  color: $text;
+}
 
 
 
