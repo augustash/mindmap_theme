@@ -1,3 +1,4 @@
+<canvas id="processing"></canvas>
 <!--.page -->
 <div role="document" class="page">
 

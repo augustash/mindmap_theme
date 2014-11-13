@@ -20,7 +20,7 @@ features[] = secondary_menu
 
 
 ;-------------- R E G I O N S -------------
-regions[page_header]              = Page header
+regions[page_header]           = Page header
 regions[page_footer]           = Page footer
 regions[help]                  = Help
 regions[content]               = Content
@@ -51,8 +51,8 @@ stylesheets[all][] = assets/scss/sections/_global.scss
 
 ;-------------- S C R I P T -------------
 ; This file is empty, just uncomment this line and start editing!
-; scripts[] = assets/js/boushh.js
-
+scripts[] = assets/js/boushh.js
+scripts[] = assets/processing/processing.js
 
 ;-------------- S E T T I N G S -------------
 settings[fett_css_onefile] = 1
