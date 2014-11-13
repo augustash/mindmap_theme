@@ -11,6 +11,12 @@ body{
   }
 }
 
+// canvas yo
+#processing {
+  position: fixed;
+  pointer-events: none;
+}
+
 .main-inner{
   background: url("/assets/images/noise.png") repeat 0 0 #333;
   border:1px solid #000;
@@ -61,7 +67,11 @@ body{
       box-shadow: 0 1px 6px rgba(0,0,0,0.3);
 
       thead {
-        background: none repeat scroll 0 0 #282828;
+        background: none repeat scroll 0 0 #000;
+      }
+
+      tbody {
+        border-top: 0;
       }
 
       th{
@@ -69,6 +79,7 @@ body{
         font-weight:400;
         text-transform: uppercase;
         color:#7f7f7f;
+        border: 0;
       }
 
       td.ctools-export-ui-operations{
@@ -86,7 +97,7 @@ body{
         border-bottom: 1px solid #222;
 
         &:hover{
-          background:#111;
+          background: darken($dkgray, 5%);
           td{
             background:none;
           }
@@ -94,10 +105,7 @@ body{
       }
 
       tr.odd{
-        background: $table-bg;
-      }
-
-      tr.odd{
+        background: lighten($dkgray, 2%);
         .active{
           background: scale-color($table-bg, $lightness: -2%);
         }
@@ -109,6 +117,7 @@ body{
       }
 
       tr.even{
+        background: lighten($dkgray, 5%);
         .active{
           background: scale-color($table-even-row-bg, $lightness: -2%);
         }
@@ -224,6 +233,12 @@ body{
     .title{
       font-size:rem-calc(12);
     }
+  }
+}
+
+.page-admin-structure .admin-list {
+  > li {
+    padding: rem-calc(10);
   }
 }
 
