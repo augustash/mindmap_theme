@@ -1,0 +1,23 @@
+.page-manage {
+
+	.view-mindmap-elements {
+
+		.views-field-field-icon {
+
+			img {
+				z-index: 10;
+				display: block;
+				position: relative;
+				margin: 0 auto;
+			}
+
+			.color {
+				position: absolute;
+				z-index: 0;
+			}
+
+		}
+
+	}
+
+}
