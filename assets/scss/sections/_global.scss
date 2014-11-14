@@ -165,6 +165,12 @@ table {
     }
   }
 }
+.front {
+  .main-inner {
+    max-width: 620px;
+    margin: 4% auto 2%;
+  }
+}
 
 .description{
   font-size:rem-calc(11);
@@ -441,6 +447,11 @@ table {
         color:#28b7e4;
       }
     }
+  }
+}
+.front {
+  #copyright {
+    max-width: 620px;
   }
 }
 
