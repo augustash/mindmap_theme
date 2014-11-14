@@ -1,5 +1,15 @@
 html.js{
+	.toggle-enable {
+		border-color: #444;
+		div {
+			background: #000;
+		}
+	}
+#module-filter-modules {
+	border-color: #000;
+}
   #module-filter-submit{
+  	border-color: #000;
     button{
       width:100%;
       margin:0;
@@ -9,4 +19,31 @@ html.js{
   #module-filter-submit.fixed{
     top:auto;
   }
+}
+
+#module-filter-tabs {
+	ul {
+		background: #000;
+		border-color: #000;
+	}
+	li {
+		background: $dkgray;
+		border-color: #000;
+		&.selected a {
+			background-color: #000;
+		}
+		&#new-tab {
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+		a {
+			&:hover, &:focus {
+				background: #000;
+			}
+			strong {
+				font-weight: 400;
+				font-size: rem-calc(13);
+			}
+		}
+	}
 }
