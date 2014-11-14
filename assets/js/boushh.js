@@ -37,4 +37,17 @@
     }
   };
 
+
+  // Drupal.behaviors.formElements = {
+  //   attach: function(context, settings) {
+  //   	$('input.form-checkbox').before('<i class="fa fa-square-o cust-checkbox"></i>');
+  //   	$('input.form-checkbox').click(function() {
+  //   		$(this).parent().find('.cust-checkbox').toggleClass('fa-check-square-o').toggleClass('fa-square-o');
+  //   	});
+  //   	$('input.vbo-table-select-all').click(function() {
+  //   		$(this).parents('table').find('td.views-field-views-bulk-operations').find('.cust-checkbox').toggleClass('fa-check-square-o').toggleClass('fa-square-o');
+  //   	});
+  // 	}
+  // };
+
 })(jQuery, Drupal);
