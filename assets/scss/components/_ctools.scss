@@ -27,6 +27,7 @@
 
   a{
     color:#3f3f3f;
+    font-size: 0.8125rem;
   }
 
   ul{
@@ -38,4 +39,8 @@
   ul.actions{
     margin:0;
   }
+}
+
+.ctools-dropbutton-processed .ctools-content li, .ctools-dropbutton-processed .ctools-content a {
+  display: inline-block;
 }

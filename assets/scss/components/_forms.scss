@@ -249,11 +249,17 @@ div.vertical-tabs{
 }
 
 // button styles
-button, .button {
+button, .button, button.secondary, .button.secondary {
+  background-color: $primary-color;
   color: $dkgray;
   &:hover {
+    background-color: darken($primary-color, 10%);
     color: #000;
   }
+}
+
+button.secondary, .button.secondary {
+  
 }
 
 

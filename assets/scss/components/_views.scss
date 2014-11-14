@@ -91,7 +91,7 @@
   }
 
   #views-ajax-body{
-    background: $dkgray;
+    background: #333;
     overflow:hidden;
     // box-sizing: initial;
 
@@ -150,7 +150,7 @@
   }
 
   .form-buttons{
-    background:#f6f6f6;
+    background:#000;
     padding:rem-calc(15);
 
     button{
@@ -242,10 +242,13 @@ body #views-ajax-popup {
 .views-admin {
   .icon.add {
     background: transparent;
-    content: "\f067";
-    display: inline;
-    font: normal normal normal 14px/1 FontAwesome;
-    color: $primary-color;
+    &:before {
+      background: transparent;
+      content: "\f067";
+      display: inline;
+      font: normal normal normal 12px/1 FontAwesome;
+      color: $primary-color;
+    }
   }
 }
 
