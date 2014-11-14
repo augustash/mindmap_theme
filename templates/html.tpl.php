@@ -244,12 +244,12 @@
           }
           
           v.add(vD);
-          if(col==0) fill(255-age,0,100,150);
-          else fill(100,200-(age/2),255-age,150);
+          if(col==0) fill(145,27,113,150);
+          else fill(178,59,27,150);
           
           if(type==1) {
-            if(col==0) fill(255-age,100,0,150);
-            else fill(255,200-(age/2),0,150);
+            if(col==0) fill(88,181,64,150);
+            else fill(86,91,155,150);
           }
             
           pushMatrix();
@@ -260,8 +260,8 @@
           popMatrix();
           
           if(age==0) {
-            if(random(100)>50) fill(200,0,0,200);
-            else fill(00,200,255,200);
+            if(random(100)>50) fill(236,118,22,200);
+            else fill(77,165,228,200);
             float size=2+random(4);
             if(random(100)>95) size+=5;
             size*=sc;
