@@ -4,6 +4,13 @@ body{
   background-repeat: repeat;
 }
 
+// fix for showing admin button text with icons, temporary until we change in theme
+.ops-bar-section a {
+  span.hide-for-medium-up {
+    display: inline !important;
+  }
+}
+
 /**
  * Hide tooltips on small screens.
  */
@@ -127,7 +134,9 @@ table {
         }
       }
 
-      tr.even{
+      tr.even,
+      tr.alt,
+      tr:nth-of-type(even) {
         background: lighten($dkgray, 5%);
         .active{
           background: scale-color($table-even-row-bg, $lightness: -2%);

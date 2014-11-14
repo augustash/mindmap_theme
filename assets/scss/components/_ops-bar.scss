@@ -33,7 +33,7 @@ $opsbar-dropdown-toggle-color: #fff !default;
 $opsbar-dropdown-toggle-alpha: 0.4 !default;
 
 // Set the link colors and styles for top-level nav
-$opsbar-link-color: #fff !default;
+$opsbar-link-color: #ccc !default;
 $opsbar-link-color-hover: #fff !default;
 $opsbar-link-color-active: #efefef !default;
 $opsbar-link-color-active-hover: #fff !default;
@@ -300,6 +300,7 @@ $opsbar-arrows: true !default; //Set false to remove the triangle icon from the 
           @include transition(all 0.2s ease-in-out 0s);
 
           i.fa{
+            margin-right: rem-calc(3);
             font-size: $opsbar-link-icon-size;
           }
 
