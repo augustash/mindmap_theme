@@ -443,6 +443,22 @@ table {
   clear: both;
 }
 
+// lets make valet sexy
+#valet {
+  background: $dkgray;
+}
+#valet-search {
+  background: #000;
+  border-color: #333;
+  color: $primary-color;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
+  font-size: 26px;
+  &:focus {
+    box-shadow: none;
+    border-color: #444;
+  }
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // eXo
 ////////////////////////////////////////////////////////////////////////////////
