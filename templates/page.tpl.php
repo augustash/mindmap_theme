@@ -85,7 +85,9 @@
     <!--/.l-help -->
   <?php endif; ?>
 
-  <div id="logo"></div>
+  <div id="logo">
+    <?php if ($linked_logo): print $linked_logo; endif; ?>
+  </div>
 
   <!--.l-main-->
   <main role="main" class="row l-main">
