@@ -329,5 +329,81 @@ span.postfix, label.postfix {
   margin-bottom: rem-calc(5);
 }
 
+.sbHolder {
+  position: relative;
+  display: inline-block;
+  min-width: 250px;
+}
+a.sbSelector {
+  color: darken($tan, 15%); 
+  background-color: lighten($tan, 15%);
+  display: block;
+  position: relative; 
+  width: 100%;
+  margin: 0;
+  padding: rem-calc(0 10);
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: 100;
+  text-transform: uppercase;
+  background-image: url("/sites/all/themes/custom/wps/assets/images/dropdown-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 96% 55%;  /*Position of the background-image*/
+  border: 1px solid lighten($tan, 10%);
+  &:hover {
+    background-color: lighten($tan, 10%);
+    border-color: lighten($tan, 5%);
+  }
+}
+select,
+ul.sbOptions {
+  border: 1px solid #bbb;  /*Removes border*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+  appearance: none;
+  width: 100px; /*Width of select dropdown to give space for arrow image*/
+  text-indent: 0.01px; /* Removes default arrow from firefox*/
+  text-overflow: "";  /*Removes default arrow from firefox*/
+  color: darken($tan, 15%); 
+  background-color: $tan;
+  display: block;
+  position: absolute;
+  z-index: 100; 
+  width: 100%;
+  top: 0 !important;
+  margin: 0;
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 3px 5px rgba(0,0,0,.3);
+  box-shadow: 0 3px 5px rgba(0,0,0,.3);
+  options,
+  li {
+    display: block;
+    position: relative; 
+    width: 100%;
+    border: 0 !important;
+    a {
+      color: darken($tan, 30%); 
+      background-color: $tan;
+      display: block;
+      padding: 7px 11px 6px;
+      font-size: 13px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+  li + li {
+    a {     
+      background-color: lighten($tan, 10%);
+      color: darken($tan, 15%); 
+      font-weight: normal;
+      &:hover {
+        background-color: $tan;
+        color: darken($tan, 30%);
+      }
+    }
+  }
+}
+
 
 

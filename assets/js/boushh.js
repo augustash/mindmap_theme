@@ -1,9 +1,15 @@
 (function ($, Drupal) {
 
-  Drupal.behaviors.boushh = {
-    attach: function(context, settings) {
-      
-    	if (window.addEventListener) {
+	Drupal.behaviors.selectReplace = {
+	    attach: function(context, settings) {
+	    	jQuery("select").selectbox();
+	    }
+	};
+
+	Drupal.behaviors.boushh = {
+	attach: function(context, settings) {
+	  
+		if (window.addEventListener) {
 	      window.addEventListener("load", function() {
 	        var scripts = document.getElementsByTagName("script");
 	        var canvasArray = Array.prototype.slice.call(document.getElementsByTagName("canvas"));
@@ -33,8 +39,8 @@
 	        }
 	      }, false);
 	    }
-      
-    }
-  };
+	  
+	}
+	};
 
 })(jQuery, Drupal);

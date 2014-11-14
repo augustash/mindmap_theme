@@ -52,6 +52,7 @@ stylesheets[all][] = assets/scss/sections/_global.scss
 
 ;-------------- S C R I P T -------------
 ; This file is empty, just uncomment this line and start editing!
+scripts[] = assets/js/jquery.selectbox.min.js
 scripts[] = assets/js/boushh.js
 scripts[] = assets/processing/processing.js
 
