@@ -252,6 +252,36 @@ body #views-ajax-popup {
   }
 }
 
+.ui-widget-content {
+  a {
+    color: $primary-color;
+  }
+}
+
+
+html.js fieldset.collapsible .fieldset-legend {
+  padding-left: 0;
+  background: transparent;
+  &:before {
+    content: "\f107";
+    display: inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    color: $primary-color;
+    margin-right: 15px;
+  }
+}
+html.js fieldset.collapsed .fieldset-legend {
+  padding-left: 0;
+  background: transparent;
+  &:before {
+    content: "\f105";
+    display: inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    color: $primary-color;
+    margin-right: 15px;
+  }
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // Views Exposed Form
 ////////////////////////////////////////////////////////////////////////////////
