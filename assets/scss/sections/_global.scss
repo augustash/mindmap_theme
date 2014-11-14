@@ -42,7 +42,7 @@ table {
   border:1px solid #000;
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  margin: 4%;
+  margin: 0 4% 4%;
 
   a{
     @include transition(all 0.2s ease-in-out 0s);
@@ -457,6 +457,37 @@ table {
     box-shadow: none;
     border-color: #444;
   }
+}
+#valet-results .ui-autocomplete {
+  background: #000;
+  li {
+    border-color: #333;
+    a.ui-state-hover,
+    a.ui-state-active,
+    a.ui-state-focus {
+      background: $primary-color;
+      color: #000;
+      text-shadow: none;
+      border-color: #fff100;
+      em {
+        color: #444;
+      }
+    }
+  }
+}
+
+#logo {
+  width: 300px;
+  height: 73px;
+  background: image-url('logo.png');
+  background-size: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 4%;
+}
+
+.page {
+  padding-top: 60px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

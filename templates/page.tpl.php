@@ -65,16 +65,6 @@
   </header>
   <!--/.l-header -->
 
-  <?php if ($breadcrumb): ?>
-    <!--.l-breadcrumb -->
-    <section class="l-breadcrumb row">
-      <div class="large-12 columns">
-        <?php print $breadcrumb; ?>
-      </div>
-    </section>
-    <!--/.l-breadcrumb -->
-  <?php endif; ?>
-
   <?php if ($messages && !$fett_messages_modal): ?>
     <!--.l-messages -->
     <section class="l-messages row">
@@ -94,6 +84,8 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
+
+  <div id="logo"></div>
 
   <!--.l-main-->
   <main role="main" class="row l-main">
