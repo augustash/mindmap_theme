@@ -1,21 +1,21 @@
-.page-manage {
+.view-mindmap-elements {
 
-	.view-mindmap-elements {
+	.views-field-field-icon {
+		display: block;
+		position: relative;
 
-		.views-field-field-icon {
+		img {
+			z-index: 10;
+			display: block;
+			position: absolute;
+			margin: 5px auto 0;
+			left: 14.5%;
+		}
 
-			img {
-				z-index: 10;
-				display: block;
-				position: relative;
-				margin: 0 auto;
-			}
-
-			.color {
-				position: absolute;
-				z-index: 0;
-			}
-
+		.color {
+			position: relative;
+			display: block;
+			z-index: 0;
 		}
 
 	}
