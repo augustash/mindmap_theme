@@ -352,8 +352,8 @@ span.postfix, label.postfix {
   min-width: 250px;
 }
 a.sbSelector {
-  color: darken($tan, 15%); 
-  background-color: lighten($tan, 15%);
+  color: darken(#333, 15%); 
+  background-color: lighten(#333, 15%);
   display: block;
   position: relative; 
   width: 100%;
@@ -367,10 +367,10 @@ a.sbSelector {
   background-image: url("/sites/all/themes/custom/wps/assets/images/dropdown-arrow.png");
   background-repeat: no-repeat;
   background-position: 96% 55%;  /*Position of the background-image*/
-  border: 1px solid lighten($tan, 10%);
+  border: 1px solid lighten(#333, 10%);
   &:hover {
-    background-color: lighten($tan, 10%);
-    border-color: lighten($tan, 5%);
+    background-color: lighten(#333, 10%);
+    border-color: lighten(#333, 5%);
   }
 }
 select,
@@ -382,8 +382,8 @@ ul.sbOptions {
   width: 100px; /*Width of select dropdown to give space for arrow image*/
   text-indent: 0.01px; /* Removes default arrow from firefox*/
   text-overflow: "";  /*Removes default arrow from firefox*/
-  color: darken($tan, 15%); 
-  background-color: $tan;
+  color: darken(#333, 15%); 
+  background-color: #333;
   display: block;
   position: absolute;
   z-index: 100; 
@@ -400,8 +400,8 @@ ul.sbOptions {
     width: 100%;
     border: 0 !important;
     a {
-      color: darken($tan, 30%); 
-      background-color: $tan;
+      color: darken(#333, 30%); 
+      background-color: #333;
       display: block;
       padding: 7px 11px 6px;
       font-size: 13px;
@@ -411,12 +411,12 @@ ul.sbOptions {
   }
   li + li {
     a {     
-      background-color: lighten($tan, 10%);
-      color: darken($tan, 15%); 
+      background-color: lighten(#333, 10%);
+      color: darken(#333, 15%); 
       font-weight: normal;
       &:hover {
-        background-color: $tan;
-        color: darken($tan, 30%);
+        background-color: #333;
+        color: darken(#333, 30%);
       }
     }
   }
