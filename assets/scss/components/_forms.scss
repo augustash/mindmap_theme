@@ -302,6 +302,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   }
 }
 select {
+  background-image: image-url('dwn-arrow.png');
   &:hover {
     background-color: darken($dkgray, 5%);
     border-color: darken($dkgray, 10%);
