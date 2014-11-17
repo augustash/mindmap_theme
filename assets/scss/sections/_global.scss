@@ -38,6 +38,12 @@ body{
   pointer-events: none;
 }
 
+div.warning, table tr.warning {
+  background: #535b99;
+  border: 0;
+  color: $dkgray;
+}
+
 // table styling
 table {
   border-color: darken($dkgray, 3%);
@@ -46,6 +52,14 @@ table {
     tr:nth-of-type(odd),
     tr:nth-of-type(even) {
       background: darken($dkgray, 3%);
+      th {
+        color: lighten($text, 25%);
+        border: 0;
+        font-weight: 400;
+        letter-spacing: .08em;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
     }
   }
   tr td,
@@ -53,6 +67,9 @@ table {
     color: $text;
   }
   tr.even,
+  tr.odd {
+    border-bottom: 0;
+  }
   tr.alt,
   tr:nth-of-type(even) {
     background: $dkgray image-url('noise.png') repeat;
@@ -60,6 +77,9 @@ table {
   tr.odd,
   tr:nth-of-type(odd) {
     background: darken($dkgray, 2%) image-url('noise.png') repeat;
+  }
+  tbody {
+    border-top: 0;
   }
 }
 

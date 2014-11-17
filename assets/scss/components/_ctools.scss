@@ -22,8 +22,13 @@
 }
 
 .ctools-button{
-  background-color:$dkgray;
-  border:none;
+  background-color: darken($dkgray, 3%);
+  border: 1px solid lighten($dkgray, 3%);
+  transition: all .3s;
+  &:hover {
+    background-color: darken($dkgray, 5%);
+    border-color: lighten($dkgray, 7%);
+  }
 
   a{
     color: $primary-color;
@@ -40,7 +45,32 @@
     margin:0;
   }
 }
+.ctools-button-processed,
+.ctools-button-processed.open {
+  &:hover {
+    border-color: lighten($dkgray, 7%);
+  }
+}
+
+.views-ui-display-tab-actions .ctools-button-processed li a, .views-ui-display-tab-actions .ctools-button-processed input {
+  color: lighten($text, 25%);
+  font-weight: 400;
+  &:hover {
+    color: $primary-color;
+  }
+}
 
 .ctools-dropbutton-processed .ctools-content li, .ctools-dropbutton-processed .ctools-content a {
   display: inline-block;
+}
+.views-display-column > .ctools-toggle {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.views-display-column > .ctools-toggle.ctools-toggle-collapsed {
+  margin-top: 14px;
+  margin-left: 12px;
+}
+.views-ui-display-tab-bucket .ctools-button-processed {
+  right: 10px;
 }

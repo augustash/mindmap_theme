@@ -3,9 +3,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .views-ui-view-title{
-  font-family:$font_custom;
   font-size:rem-calc(16);
   padding-bottom:rem-calc(5);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 400;
+  color: lighten($text, 25%);
+  font-family: 'Ropa Sans', helvetica, arial, sans-serif;
 }
 
 .views-ui-view-displays,
@@ -106,7 +110,7 @@
     padding:0;
     font-size:rem-calc(11);
     color:#7f7f7f;
-    background:#f6f6f6;
+    background: darken($dkgray, 5%);
   }
 
   .views-override{
@@ -146,7 +150,7 @@
   }
 
   .even .form-type-checkbox{
-    background:$table-even-row-bg;
+    background: $dkgray;
   }
 
   .form-buttons{
@@ -166,6 +170,7 @@
 }
 
 #views-preview-wrapper{
+  border: 0;
   #views-ui-preview-form{
     .form-type-textfield label{
       height:auto;
@@ -176,6 +181,13 @@
     table{
       margin:0;
     }
+  }
+}
+
+.views-filterable-options {
+  border-color: darken($dkgray, 3%);
+  .form-type-checkbox {
+    border-color: darken($dkgray, 3%);
   }
 }
 
@@ -218,15 +230,19 @@ body #views-ajax-popup {
 }
 
 .views-ui-display-tab-bucket {
+  padding: rem-calc(10);
   border-color: #000;
+  background-color: darken($dkgray, 2%);
   .even {
-    background-color: #000;
+    background-color: darken($dkgray, 5%);
   }
 }
 
 .views-display-column {
   > .ctools-collapsible-handle {
     border-color: #000;
+    background-color: darken($dkgray, 2%);
+    padding-left: 25px;
   }
 }
 
@@ -252,6 +268,13 @@ body #views-ajax-popup {
   }
 }
 
+.ui-widget {
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
+  font-weight: 400;
+  button {
+    font-family: 'Droid Sans', helvetica, arial, sans-serif;
+  }
+}
 .ui-widget-content {
   a {
     color: $primary-color;
@@ -280,6 +303,59 @@ html.js fieldset.collapsed .fieldset-legend {
     color: $primary-color;
     margin-right: 15px;
   }
+}
+
+.views-admin h1.unit-title {
+  font-size: rem-calc(26);
+  letter-spacing: .04em;
+}
+
+.views-display-columns > * {
+  margin-left: 2%;
+}
+
+#views-ajax-popup .views-override {
+  right: 35px;
+  padding-right: 0;
+  label {
+    position: static;
+    display: inline-block;
+  }
+}
+
+#views-ajax-popup .views-override .sbSelector {
+  height: 35px;
+  line-height: 35px;
+}
+#views-ajax-popup #views-ajax-title {
+  padding-right: 30px;
+}
+
+.views-display-setting .label, .views-display-setting .views-ajax-link {
+  color: lighten($text, 25%);
+}
+
+.views-displays a.secondary {
+  font-weight: 400;
+  font-size: 12px;
+  height: auto;
+  background-color: darken($dkgray, 5%);
+  color: $primary-color;
+}
+.views-displays a.secondary:hover, .views-displays .secondary .active a {
+  background-color: $primary-color;
+  color: $dkgray;
+}
+
+button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
+  opacity: 1;
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.container-inline > * + *, .container-inline .fieldset-wrapper > * + * {
+  padding-left: rem-calc(30);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
