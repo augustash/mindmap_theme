@@ -57,7 +57,7 @@ table {
         border: 0;
         font-weight: 400;
         letter-spacing: .08em;
-        font-size: 11px;
+        font-size: 12px;
         text-transform: uppercase;
       }
     }
@@ -88,14 +88,14 @@ table {
   border:1px solid #000;
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  margin: 0 4% 4%;
+  margin: 0 4% 1%;
 
   a{
     @include transition(all 0.2s ease-in-out 0s);
   }
 
   #page-title{
-    font-size:rem-calc(15);
+    font-size:rem-calc(17);
     font-family:$font_custom;
     margin:0;
     padding:rem-calc(15);
@@ -213,14 +213,22 @@ table {
   }
 }
 .front {
-  .main-inner {
+  .page {
+    display: block;
+    float: none;
+    margin: 0 auto;
     max-width: 620px;
-    margin: 4% auto 2%;
+    position: relative;
+
+    .main-inner {
+      margin: 1% 0 5%;
+      max-width: 620px;
+    }
   }
 }
 
 .description{
-  font-size:rem-calc(11);
+  font-size:rem-calc(12);
   color: $text;
 }
 
@@ -287,7 +295,7 @@ table {
   }
 
   .icon{
-    font-size:rem-calc(60);
+    font-size:rem-calc(65);
     text-align: center;
     color:#404040;
     @include transition(all 0.2s ease-in-out 0s);
@@ -298,7 +306,7 @@ table {
   }
 
   .title{
-    font-size:rem-calc(16);
+    font-size:rem-calc(18);
     font-weight:600;
     color: lighten($text, 25%);
     text-align: center;
@@ -306,10 +314,10 @@ table {
 
   &.cols-2{
     .icon{
-      font-size:rem-calc(40);
+      font-size:rem-calc(45);
     }
     .title{
-      font-size:rem-calc(12);
+      font-size:rem-calc(14);
     }
   }
 }
@@ -330,7 +338,7 @@ table {
 
   .current-filters{
     color:$warning-color;
-    font-size:rem-calc(13);
+    font-size:rem-calc(15);
     list-style-type: none;
 
     li{
@@ -349,7 +357,7 @@ table {
     line-height:rem-calc(36);
     padding-right:rem-calc(5);
     font-family:$font_custom;
-    font-size:rem-calc(11);
+    font-size:rem-calc(12);
   }
 
   .filters{
@@ -400,7 +408,7 @@ table {
     padding:0;
 
     li{
-      font-size: 0.8125rem;
+      font-size: 0.9125rem;
     }
   }
 
@@ -438,7 +446,7 @@ table {
   }
 
   dd{
-    font-size:rem-calc(12);
+    font-size:rem-calc(14);
     color:#7f7f7f;
   }
 }
@@ -451,7 +459,7 @@ table {
   background:#fffbe7;
 
   p{
-    font-size:rem-calc(12);
+    font-size:rem-calc(14);
     color:#616059;
     margin-bottom:rem-calc(8);
 
@@ -479,7 +487,7 @@ table {
   small{
     font-family:$font_custom;
     font-weight:200;
-    font-size:rem-calc(13);
+    font-size:rem-calc(14);
     color:#bfbfbf;
     margin: 0;
     padding: 10px 20px;
@@ -489,7 +497,7 @@ table {
     a{
       color:#0a96c3;
       font-weight:200;
-      font-size:rem-calc(15);
+      font-size:rem-calc(16);
 
       &:hover{
         color:#28b7e4;
@@ -499,7 +507,7 @@ table {
 }
 .front {
   #copyright {
-    max-width: 620px;
+    width: 100%;
   }
 }
 
@@ -550,11 +558,22 @@ table {
 }
 
 #logo {
-  max-width: 250px;
+  margin: 1% auto;
   position: relative;
-  margin-bottom: 20px;
-  margin-left: 4%;
+  text-align: left;
+  width: 100%;
   padding-left: rem-calc(15);
+
+  a {
+    display: block;
+    max-width: 333px;
+  }
+}
+.not-front {
+  #logo {
+    margin: 1% 4%;
+    width: 92%;
+  }
 }
 
 .page {
