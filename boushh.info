@@ -45,6 +45,7 @@ stylesheets[all][] = assets/scss/components/_ops-bar.scss
 stylesheets[all][] = assets/scss/components/_module-filter.scss
 stylesheets[all][] = assets/scss/components/_typography.scss
 stylesheets[all][] = assets/scss/components/_manage_content.scss
+stylesheets[all][] = assets/scss/components/_modal.scss
 
 ; Sections
 stylesheets[all][] = assets/scss/sections/_global.scss

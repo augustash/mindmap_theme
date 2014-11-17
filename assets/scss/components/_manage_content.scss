@@ -1,5 +1,10 @@
 .view-mindmap-elements {
 
+	td { 
+		position: relative;
+		padding: 0.5% 1%;
+	}
+
 	#edit-select {
 
 
@@ -7,13 +12,48 @@
 
 	.views-field-title {
 
+		h3 {
+			float: left;
+    		padding: 0 0 0 20px;
+    		position: relative;
+    		z-index: 10;
+    		display: block;
+    		width: 90%;
+    		color: #fff;
+		}
+
 		p {
 			margin: 0;
+			position: relative;
+			z-index: 10;
+			float: left;
+    		padding: 0 0 0 20px;
+    		color: #eee;
+    		display: block;
+		}
+
+		img {
+			float: left;
+			position: relative;
+			z-index: 10;
+		}
+		.color {
+			height: 100%;
+    		position: absolute;
+    		top: 1px;
+    		width: 100%;
+    		z-index: 1;
+
+			div {
+				height: 97% !important;
+    			width: 100% !important;
+			}
 		}
 
 	}
 
-	.views-field-field-icon {
+	.views-field-field-icon,
+	.views-field-field-icon-1 {
 		display: block;
 		position: relative;
 
@@ -22,7 +62,7 @@
 			display: block;
 			position: absolute;
 			margin: 5px auto 0;
-			left: 21px;
+			left: 14px;
 		}
 
 		.color {
