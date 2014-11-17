@@ -394,7 +394,6 @@ ul.sbOptions {
   -webkit-appearance: none;  /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
   appearance: none;
-  width: 100px; /*Width of select dropdown to give space for arrow image*/
   text-indent: 0.01px; /* Removes default arrow from firefox*/
   text-overflow: "";  /*Removes default arrow from firefox*/
   color: $text;
@@ -403,6 +402,7 @@ ul.sbOptions {
   position: absolute;
   z-index: 100; 
   width: 100%;
+  overflow: scroll;
   top: 0 !important;
   margin: 0;
   -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.3);

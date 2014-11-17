@@ -4,7 +4,7 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$opsbar-bg-color: #404040 !default;
+$opsbar-bg-color: darken($dkgray, 5%) !default;
 $opsbar-bg: none !default;
 
 $opsbar-secondary-link-font-size: rem-calc(12) !default;
@@ -24,8 +24,8 @@ $opsbar-title-weight: $font-weight-normal !default;
 $opsbar-title-font-size: rem-calc(17) !default;
 
 // Style the top bar dropdown elements
-$opsbar-dropdown-bg: #404040 !default;
-$opsbar-dropdown-link-color: #fff !default;
+$opsbar-dropdown-bg: $text !default;
+$opsbar-dropdown-link-color: $dkgray !default;
 $opsbar-dropdown-link-bg: #404040 !default;
 $opsbar-dropdown-link-weight: $font-weight-normal !default;
 $opsbar-dropdown-toggle-size: 5px !default;
@@ -33,22 +33,22 @@ $opsbar-dropdown-toggle-color: #fff !default;
 $opsbar-dropdown-toggle-alpha: 0.4 !default;
 
 // Set the link colors and styles for top-level nav
-$opsbar-link-color: #ccc !default;
-$opsbar-link-color-hover: #fff !default;
-$opsbar-link-color-active: #efefef !default;
-$opsbar-link-color-active-hover: #fff !default;
-$opsbar-link-weight: $font-weight-normal !default;
+$opsbar-link-color: $dkgray !default;
+$opsbar-link-color-hover: $dkgray !default;
+$opsbar-link-color-active: $dkgray !default;
+$opsbar-link-color-active-hover: $dkgray !default;
+$opsbar-link-weight: 600 !default;
 $opsbar-link-font-size: rem-calc(12) !default;
 $opsbar-link-icon-size: rem-calc(15) !default;
 $opsbar-link-hover-lightness: -10% !default; // Darken by 10%
 $opsbar-link-bg: $opsbar-bg !default;
-$opsbar-link-bg-hover: #272727 !default;
+$opsbar-link-bg-hover: $primary-color !default;
 $opsbar-link-bg-color-hover: #ffffff !default;
-$opsbar-link-bg-active: #272727 !default;
+$opsbar-link-bg-active: $primary-color !default;
 $opsbar-link-bg-active-hover: scale-color($opsbar-link-bg-active, $lightness: -14%) !default;
 // $opsbar-link-font-family: $body-font-family !default;
 $opsbar-link-font-family: $font_custom !default;
-$opsbar-link-text-transform: none !default;
+$opsbar-link-text-transform: uppercase !default;
 $opsbar-link-padding: $opsbar-height / 3 !default;
 
 $opsbar-button-font-size: 0.75rem !default;
@@ -274,6 +274,7 @@ $opsbar-arrows: true !default; //Set false to remove the triangle icon from the 
         display: block;
         font-size: $rem-base;
         margin: 0;
+        border: 1px solid lighten($dkgray, 5%);
       }
 
       .divider,
@@ -296,7 +297,7 @@ $opsbar-arrows: true !default; //Set false to remove the triangle icon from the 
           font-size: $opsbar-link-font-size;
           font-weight: $opsbar-link-weight;
           text-transform: $opsbar-link-text-transform;
-          border-top:2px solid #dddddd;
+          letter-spacing: .02em;
           @include transition(all 0.2s ease-in-out 0s);
 
           i.fa{
@@ -347,6 +348,16 @@ $opsbar-arrows: true !default; //Set false to remove the triangle icon from the 
             background: $opsbar-link-bg-active-hover;
             color: $opsbar-link-color-active-hover;
           }
+        }
+        &.secondary:not(.has-form) > a:not(.button) {
+          background: lighten($text, 15%);
+          color: $dkgray;
+        }
+        &.secondary:not(.has-form).active > a:not(.button),
+        &.secondary:not(.has-form) > a:not(.button):hover,
+        &.secondary:not(.has-form).active > a:not(.button):hover {
+          background: lighten($text, 25%);
+          color: $dkgray;
         }
       }
 
@@ -651,7 +662,6 @@ $opsbar-arrows: true !default; //Set false to remove the triangle icon from the 
           }
 
           li.active:not(.secondary) {
-            box-shadow: 4px 2px 6px -4px rgba(0, 0, 0, 0.75);
             z-index:10;
           }
         }
