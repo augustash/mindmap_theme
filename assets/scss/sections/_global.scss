@@ -4,6 +4,15 @@ body{
   background-repeat: repeat;
 }
 
+
+//
+::selection {
+  background: #000; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #000; /* Gecko Browsers */
+}
+
 // fix for showing admin button text with icons, temporary until we change in theme
 .ops-bar-section a {
   span.hide-for-medium-up {
@@ -31,14 +40,31 @@ body{
 
 // table styling
 table {
+  border-color: darken($dkgray, 3%);
+  thead {
+    tr,
+    tr:nth-of-type(odd),
+    tr:nth-of-type(even) {
+      background: darken($dkgray, 3%);
+    }
+  }
   tr td,
   tr th {
     color: $text;
   }
+  tr.even,
+  tr.alt,
+  tr:nth-of-type(even) {
+    background: $dkgray image-url('noise.png') repeat;
+  }
+  tr.odd,
+  tr:nth-of-type(odd) {
+    background: darken($dkgray, 2%) image-url('noise.png') repeat;
+  }
 }
 
 .main-inner{
-  background: #333 image-url('noise.png') repeat;
+  background: $dkgray image-url('noise.png') repeat;
   border:1px solid #000;
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
@@ -46,7 +72,6 @@ table {
 
   a{
     @include transition(all 0.2s ease-in-out 0s);
-    color: #fff100;
   }
 
   #page-title{
@@ -84,8 +109,7 @@ table {
 
     table{
       width:100%;
-      border: 1px solid #222;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+      border: 2px solid darken($dkgray, 3%);
 
       thead {
         background: none repeat scroll 0 0 #000;
@@ -112,21 +136,25 @@ table {
         }
       }
 
+      td.views-field-field-published {
+        font-style: italic;
+      }
+
       tr.odd,
       tr.even{
         @include transition(all 0.2s ease-in-out 0s);
-        border-bottom: 1px solid #222;
+        border-bottom: 2px solid darken($dkgray, 3%);
+        background: $dkgray image-url('noise.png') repeat;
 
         &:hover{
-          background: darken($dkgray, 5%);
+          background: darken($dkgray, 3%);
           td{
             background:none;
           }
         }
       }
 
-      tr.odd{
-        background: lighten($dkgray, 2%);
+      tr.odd {
         .active{
           background: scale-color($table-bg, $lightness: -2%);
         }
@@ -140,7 +168,6 @@ table {
       tr.even,
       tr.alt,
       tr:nth-of-type(even) {
-        background: lighten($dkgray, 5%);
         .active{
           background: scale-color($table-even-row-bg, $lightness: -2%);
         }
@@ -174,7 +201,7 @@ table {
 
 .description{
   font-size:rem-calc(11);
-  color: #ec7616;
+  color: $text;
 }
 
 .breadcrumbs{
@@ -218,15 +245,16 @@ table {
 
   a{
     color: $primary-color;
-    background: $dkgray;
+    background: darken($dkgray, 2%);
+    border: 1px solid lighten($dkgray, 3%);
     padding: rem-calc(0 20 20);
     display:block;
     @include transition(all 0.2s ease-in-out 0s);
     overflow:hidden;
 
     &:hover{
-      background:#000;
-      border-color:#fff;
+      background: darken($dkgray, 4%);
+      border-color: lighten($dkgray, 5%);
 
       .icon{
         color:$primary-color;
@@ -252,7 +280,7 @@ table {
   .title{
     font-size:rem-calc(16);
     font-weight:600;
-    color: $text;
+    color: lighten($text, 25%);
     text-align: center;
   }
 
@@ -492,6 +520,13 @@ table {
       }
     }
   }
+}
+#valet-submit {
+  background: image-url('valet-submit.png');
+  width: 60px;
+  height: 60px;
+  right: 18px;
+  top: 18px;
 }
 
 #logo {

@@ -270,6 +270,7 @@ div.vertical-tabs{
   legend {
     line-height: rem-calc(40);
     margin-right: 15px;
+    padding: 0;
   }
   div.fieldset-wrapper {
     padding: 0;
@@ -283,6 +284,7 @@ button, .button, button.secondary, .button.secondary {
   font-weight: 600;
   background-color: $primary-color;
   color: $dkgray;
+  height: 40px;
   &:hover {
     background-color: darken($primary-color, 10%);
     color: #000;
@@ -296,7 +298,7 @@ button.secondary, .button.secondary {
 
 // general form styles
 fieldset legend {
-  background: #333 image-url('noise.png') repeat;
+  background: $dkgray image-url('noise.png') repeat;
   color: #ccc;
   font-weight: 400;
   font-size: rem-calc(14);
@@ -304,14 +306,16 @@ fieldset legend {
   letter-spacing: .04em;
 }
 
-input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
-  background-color: $dkgray;
-  border-color: darken($dkgray, 5%);
+form input[type="text"], form input[type="password"], form input[type="date"], form input[type="datetime"], form input[type="datetime-local"], form input[type="month"], form input[type="week"], form input[type="email"], form input[type="number"], form input[type="search"], form input[type="tel"], form input[type="time"], form input[type="url"], form textarea, select, .sbHolder {
+  background-color: darken($dkgray, 2%);
+  border-color: lighten($dkgray, 3%);
   color: $text;
-  margin-bottom: rem-calc(5);
+  margin-bottom: rem-calc(10);
+  transition: .3s all;
+  box-shadow: none;
   &:focus {
-    background-color: darken($dkgray, 5%);
-    border-color: darken($dkgray, 10%);
+    background-color: darken($dkgray, 4%);
+    border-color: lighten($dkgray, 5%);
     box-shadow: none;
     outline: none;
   }
@@ -326,7 +330,7 @@ select {
 }
 
 label {
-  color: $text;
+  color: lighten($text, 25%);
 }
 
 .resizable-textarea .grippie {
@@ -335,10 +339,11 @@ label {
 }
 
 
-span.postfix, label.postfix {
-  background: transparent;
+span.postfix, label.postfix,
+span.prefix, label.prefix {
+  background: lighten($dkgray, 3%);
   border: 0;
-  color: #999;
+  color: $text;
 }
 
 .form-textarea-wrapper {
@@ -352,8 +357,8 @@ span.postfix, label.postfix {
   min-width: 250px !important;
 }
 a.sbSelector {
-  color: darken(#333, 15%); 
-  background-color: lighten(#333, 5%);
+  color: $text;
+  background-color: darken($dkgray, 3%);
   display: block;
   position: relative; 
   width: 100%;
@@ -367,30 +372,29 @@ a.sbSelector {
   background-image: image-url('dwn-arrow.png');
   background-repeat: no-repeat;
   background-position: 96% 55%;  /*Position of the background-image*/
-  border: 1px solid #111;
+  border: 1px solid lighten($dkgray, 3%);
   &:hover {
-    background-color: lighten(#333, 10%);
-    border-color: #000;
+    background-color: darken($dkgray, 5%);
+    border-color: lighten($dkgray, 5%);
   }
 }
 select,
 ul.sbOptions {
-  border: 1px solid #bbb;  /*Removes border*/
+  border: 1px solid lighten($dkgray, 3%);  /*Removes border*/
   -webkit-appearance: none;  /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
   appearance: none;
   width: 100px; /*Width of select dropdown to give space for arrow image*/
   text-indent: 0.01px; /* Removes default arrow from firefox*/
   text-overflow: "";  /*Removes default arrow from firefox*/
-  color: darken(#333, 15%); 
-  background-color: #333;
+  color: $text;
+  background-color: $dkgray;
   display: block;
   position: absolute;
   z-index: 100; 
   width: 100%;
   top: 0 !important;
   margin: 0;
-  border: 1px solid #555;
   -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.3);
   -moz-box-shadow: 0 3px 5px rgba(0,0,0,.3);
   box-shadow: 0 3px 5px rgba(0,0,0,.3);
@@ -402,7 +406,7 @@ ul.sbOptions {
     border: 0 !important;
     a {
       color: $primary-color;
-      background-color: #333;
+      background-color: darken($dkgray, 5%);
       display: block;
       padding: 7px 11px 6px;
       font-size: 13px;
@@ -412,11 +416,11 @@ ul.sbOptions {
   }
   li + li {
     a {     
-      background-color: lighten(#333, 5%);
-      color: #aaa; 
+      background-color: darken($dkgray, 3%);
+      color: $text;
       font-weight: normal;
       &:hover {
-        background-color: #333;
+        background-color: darken($dkgray, 5%);
         color: $primary-color;
       }
     }
