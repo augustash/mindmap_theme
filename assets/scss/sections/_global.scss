@@ -133,6 +133,7 @@ table {
     padding:rem-calc(15);
 
     table{
+      clear: both;
       width:100%;
       border: 2px solid darken($dkgray, 3%);
 
