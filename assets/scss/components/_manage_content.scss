@@ -1,12 +1,19 @@
 // page header
-.page-header {
+.main-inner .page-header {
 	width: 100%;
 	&.stuck {
 		position: fixed;
-		z-index: 100;
+		z-index: 500;
 		top: 45px;
 		width: 94%;
 		width: calc(94% - 2px);
+		h1#page-title {
+			padding-top: rem-calc(8);
+			padding-bottom: rem-calc(8);
+		}
+		#logo {
+			top: 4px;
+		}
 		@media (-webkit-min-device-pixel-ratio: 1.25), 
 		(min-resolution: 120dpi){ 
 	  		top: 50px;
@@ -25,7 +32,7 @@
 		border: 0;
 		float: left;
 		padding: 0;
-		margin: rem-calc(0 0 15)
+		margin: rem-calc(0 0 15);
 	}
 	.views-field-title {
 		p {
@@ -34,7 +41,7 @@
 		}
 	}
 	.views-field-nothing-1 {
-		min-width: 200px;
+		min-width: 180px;
 	}
 }
 
@@ -87,7 +94,7 @@
 		height: auto;
 		line-height: 1.6;
 		font-size: rem-calc(13);
-		padding: rem-calc(6 10);
+		padding: rem-calc(6 15);
 		margin: 0;
 	}
 	.views-field-nothing {

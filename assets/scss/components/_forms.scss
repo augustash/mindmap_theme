@@ -298,8 +298,11 @@ button, .button, button.secondary, .button.secondary, form input[type="submit"] 
   }
 }
 
+.button.gray {
+  background: $text;
+}
+
 button.secondary, .button.secondary {
-  
 }
 
 button.tiny, .button.tiny {

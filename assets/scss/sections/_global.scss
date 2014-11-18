@@ -116,7 +116,7 @@ table {
     background: linear-gradient(to bottom,  rgba(234,222,0,1) 2%,rgba(255,241,0,1) 87%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eade00', endColorstr='#fff100',GradientType=0 ); /* IE6-9 */
     letter-spacing: .06em;
-    border-bottom:1px solid #333;
+    transition: all .3s;
 
     em{
       font-weight:400;
@@ -603,6 +603,11 @@ table {
   width: 100%;
   padding-left: rem-calc(15);
   max-width: 200px;
+  transition: .3s all;
+  @media (-webkit-min-device-pixel-ratio: 1.25), 
+    (min-resolution: 120dpi){ 
+      max-width: 225px;
+  }
   a {
     display: block;
   }

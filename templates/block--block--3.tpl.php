@@ -1,0 +1,1 @@
+<a href="/admin/structure/entity-type/mindmap/idea/add" title="Add Idea" class="button right add"><i class="fa fa-plus"></i> Add Idea</a>
