@@ -4,9 +4,13 @@
 	&.stuck {
 		position: fixed;
 		z-index: 100;
-		top: 40px;
+		top: 45px;
 		width: 94%;
 		width: calc(94% - 2px);
+		@media (-webkit-min-device-pixel-ratio: 1.25), 
+		(min-resolution: 120dpi){ 
+	  		top: 50px;
+	  	}
 	}
 }
 
