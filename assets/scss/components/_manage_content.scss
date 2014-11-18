@@ -1,7 +1,10 @@
 // page header
 .page-header {
+	width: 100%;
 	&.stuck {
 		position: fixed;
+		z-index: 100;
+		top: 40px;
 	}
 }
 
