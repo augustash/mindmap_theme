@@ -1,7 +1,12 @@
 // page header
 .page-header {
+	width: 100%;
 	&.stuck {
 		position: fixed;
+		z-index: 100;
+		top: 40px;
+		width: 94%;
+		width: calc(94% - 2px);
 	}
 }
 
@@ -126,7 +131,6 @@
 	}
 	.views-field-field-icon,
 	.views-field-field-icon-1 {
-		display: block;
 		position: relative;
 		img {
 			z-index: 10;
