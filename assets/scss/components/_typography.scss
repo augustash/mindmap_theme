@@ -2,6 +2,7 @@ body {
 	font-family: 'Droid Sans', helvetica, arial, sans-serif;
 	font-weight: 400;
 	color: $text;
+	font-size: rem-calc(15);
 }
 
 h1, h2, h3, h4, h5 {
@@ -15,6 +16,14 @@ h3 {
 	font-size: rem-calc(20);
 	text-transform: uppercase;
 	margin-bottom: rem-calc(3);
+}
+
+p {
+	font-size: rem-calc(15);
+}
+
+ul, ol, dl {
+	font-size: rem-calc(15);
 }
 
 @media 
