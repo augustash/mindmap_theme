@@ -40,8 +40,16 @@
 	      }, false);
 	    }
 	  
-	}
+	  }
 	};
+
+	Drupal.behaviors.stickySide = {
+    attach: function (context, settings) {
+
+      $('.page-header').waypoint('sticky');
+      
+    }
+  };
 
 
   // Drupal.behaviors.formElements = {

@@ -1,5 +1,27 @@
-.view-mindmap-elements {
+// page header
+.page-header {
+	&.stuck {
+		position: fixed;
+	}
+}
 
+// category view
+.view-mindmap-elements.view-display-id-page_1 {
+	.views-field-title {
+		p {
+			color: #222;
+    		color: rgba(34,34,34,.75);
+		}
+	}
+}
+
+// idea view
+.view-mindmap-elements.view-display-id-block_1 {
+
+}
+
+.view-mindmap-elements.view-display-id-page_1,
+.view-mindmap-elements.view-display-id-block_1 {
 	tr {
 		&:hover {
 			.color:after {
@@ -7,19 +29,17 @@
 			}
 		}
 	}
-
-	td { 
+	td, th { 
 		position: relative;
-		padding: 0.75% 1%;
+		padding: 0.75% 1.5%;
 	}
-
 	.edit-links {
 		a {
 			display: block;
 			margin-bottom: rem-calc(5);
 			font-size: rem-calc(12);
 			text-align: center;
-			border: 1px solid lighten($dkgray, 3%);
+			border: 1px solid lighten($dkgray, 5%);
 			padding: rem-calc(6 10);
 			background: darken($dkgray, 3%);
 			&:before {
@@ -40,7 +60,6 @@
 			}
 		}
 	}
-
 	.button.secondary {
 		height: auto;
 		line-height: 1.6;
@@ -48,27 +67,18 @@
 		padding: rem-calc(6 10);
 		margin: 0;
 	}
-
 	.views-field-nothing {
 		min-width: 140px;
 	}
-
 	.views-field-nothing-1 {
-		min-width: 170px;
+		min-width: 190px;
 	}
-
-	#edit-select {
-
-
-	}
-
 	.views-field-title {
 		.icon,
 		.cat-desc {
 			display: inline-block;
 			vertical-align: middle;
 		}
-
 		.cat-desc {
 			width: 90%;
 			margin-left: -4px;
@@ -76,18 +86,12 @@
 			z-index: 10;
 			padding-left: rem-calc(20);
 		}
-
 		h3 {
     		color: #fff;
 		}
-
 		p {
 			margin: 0;
-    		color: #222;
-    		color: rgba(34,34,34,.75);
-    		display: block;
 		}
-
 		.icon {
 			width: 10%;
 			img {
@@ -96,7 +100,6 @@
 				margin: 10px;
 			}
 		}
-
 		.color {
 			height: 100%;
     		position: absolute;
@@ -120,14 +123,11 @@
     			height: 100% !important;
     		}
 		}
-
 	}
-
 	.views-field-field-icon,
 	.views-field-field-icon-1 {
 		display: block;
 		position: relative;
-
 		img {
 			z-index: 10;
 			display: block;
@@ -135,13 +135,10 @@
 			margin: 5px auto 0;
 			left: 14px;
 		}
-
 		.color {
 			position: relative;
 			display: block;
 			z-index: 0;
 		}
-
 	}
-
 }
