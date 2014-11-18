@@ -91,9 +91,9 @@
       <div class="main-inner">
         <div id="logo">
         <?php if (!$is_front): ?>
-          <img src="/sites/all/themes/custom/Boushh/assets/images/logo-bw.png" alt="Deluxe Exchange Conference 2014" />
+          <a href="/"><img src="/sites/all/themes/custom/Boushh/assets/images/logo-bw.png" alt="Deluxe Exchange Conference 2014" /></a>
         <?php else: ?>
-          <img src="/sites/all/themes/custom/Boushh/assets/images/logo.png" alt="Deluxe Exchange Conference 2014" />
+          <a href="/"><img src="/sites/all/themes/custom/Boushh/assets/images/logo.png" alt="Deluxe Exchange Conference 2014" /></a>
         <?php endif; ?>
         </div>
 
