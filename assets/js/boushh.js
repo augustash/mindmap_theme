@@ -46,10 +46,12 @@
 	Drupal.behaviors.stickySide = {
     attach: function (context, settings) {
 
-      $('.page-header').waypoint('sticky');
+        $('.page-header').waypoint('sticky', {
+       	   offset: 40
+      	});
       
-    }
-  };
+      }
+  	};
 
 
   // Drupal.behaviors.formElements = {
