@@ -18,6 +18,7 @@ h3 {
 	margin-bottom: rem-calc(3);
 }
 
+
 p {
 	font-size: rem-calc(15);
 }
@@ -26,16 +27,17 @@ ul, ol, dl {
 	font-size: rem-calc(15);
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 1.5), 
-(min-resolution: 144dpi){ 
-	html {
-		font-size: 92%;
-	}
-}
 
 @media #{$medium-up} {
 	html {
 		font-size: 100%;
+	}
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 120dpi){ 
+	html {
+		font-size: 115%;
 	}
 }

@@ -107,10 +107,13 @@
 
         <div class="main-content">
 
+          <!-- Admin Tabs are no needed for this project -->
+          <!-- 
           <?php if (!empty($tabs) && FALSE): ?>
             <?php print render($tabs); ?>
             <?php if (!empty($tabs2)): print render($tabs2); endif; ?>
           <?php endif; ?>
+          -->
 
           <?php if ($action_links && FALSE): ?>
             <nav class="top-bar" data-topbar>

@@ -227,6 +227,27 @@ table {
     }
   }
 }
+.front.logged-in {
+  .page {
+    display: block;
+    float: none;
+    margin: 0 4% 1%;
+    max-width: 100%;
+    position: relative;
+
+    .main-inner {
+      margin: 1% 0 5%;
+      max-width: 100%;
+
+      .block-views-mindmap-elements-block-5 {
+        display: block;
+        position: relative;
+        float: left;
+        width: 50%;
+      }
+    }
+  }
+}
 
 .description{
   font-size: rem-calc(11);
@@ -485,7 +506,6 @@ table {
 #copyright{
   float: none;
   margin: 0 auto;
-  padding: 0;
   text-align: right;
   width: 91%;
 
