@@ -63,6 +63,12 @@
 .ctools-dropbutton-processed .ctools-content li, .ctools-dropbutton-processed .ctools-content a {
   display: inline-block;
 }
+.ctools-toggle {
+  margin-right: 6px;
+}
+.ctools-toggle.ctools-toggle-collapsed {
+  margin-right: 9px;
+}
 .views-display-column > .ctools-toggle {
   margin-top: 15px;
   margin-left: 10px;

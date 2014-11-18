@@ -57,7 +57,7 @@ table {
         border: 0;
         font-weight: 400;
         letter-spacing: .08em;
-        font-size: 12px;
+        font-size: rem-calc(11);
         text-transform: uppercase;
       }
     }
@@ -89,18 +89,19 @@ table {
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   margin: 0 4% 1%;
+  position: relative;
 
   a{
     @include transition(all 0.2s ease-in-out 0s);
   }
 
   #page-title{
-    font-size:rem-calc(17);
+    font-size:rem-calc(26);
     font-family:$font_custom;
     margin:0;
-    padding:rem-calc(15);
+    padding:rem-calc(20 15);
     text-transform: uppercase;
-    font-weight:600;
+    font-weight:400;
     color:#111;
     background: rgb(234,222,0); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(234,222,0,1) 2%, rgba(255,241,0,1) 87%); /* FF3.6+ */
@@ -110,7 +111,7 @@ table {
     background: -ms-linear-gradient(top,  rgba(234,222,0,1) 2%,rgba(255,241,0,1) 87%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(234,222,0,1) 2%,rgba(255,241,0,1) 87%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eade00', endColorstr='#fff100',GradientType=0 ); /* IE6-9 */
-  
+    letter-spacing: .06em;
     border-bottom:1px solid #333;
 
     em{
@@ -228,8 +229,12 @@ table {
 }
 
 .description{
-  font-size:rem-calc(12);
+  font-size: rem-calc(11);
   color: $text;
+  @media (-webkit-min-device-pixel-ratio: 1.5), 
+    (min-resolution: 144dpi) { 
+    font-size: rem-calc(12);
+  }
 }
 
 .breadcrumbs{
@@ -558,26 +563,20 @@ table {
 }
 
 #logo {
-  margin: 1% auto;
-  position: relative;
+  position: absolute;
+  right: rem-calc(15);
+  top: rem-calc(15);
   text-align: left;
   width: 100%;
   padding-left: rem-calc(15);
-
+  max-width: 200px;
   a {
     display: block;
-    max-width: 333px;
-  }
-}
-.not-front {
-  #logo {
-    margin: 1% 4%;
-    width: 92%;
   }
 }
 
 .page {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -587,3 +586,4 @@ table {
 html.exo-exists #exo-page{
   background: $body-bg;
 }
+

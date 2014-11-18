@@ -6,9 +6,9 @@
   font-size:rem-calc(16);
   padding-bottom:rem-calc(5);
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .12em;
   font-weight: 400;
-  color: lighten($text, 25%);
+  color: lighten($text, 35%);
   font-family: 'Ropa Sans', helvetica, arial, sans-serif;
 }
 
@@ -41,7 +41,6 @@
     font-family:$font_custom;
     color: $primary-color;
     font-size:rem-calc(17);
-    font-weight:700;
   }
 
   h3{
@@ -334,7 +333,9 @@ html.js fieldset.collapsed .fieldset-legend {
 .views-display-setting .label, .views-display-setting .views-ajax-link {
   color: lighten($text, 25%);
 }
-
+.views-displays {
+  padding-bottom: 12px;
+}
 .views-displays a.secondary {
   font-weight: 400;
   font-size: 12px;

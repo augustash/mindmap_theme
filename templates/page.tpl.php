@@ -85,14 +85,17 @@
     <!--/.l-help -->
   <?php endif; ?>
 
-  <div id="logo">
-    <?php if ($linked_logo): print $linked_logo; endif; ?>
-  </div>
-
   <!--.l-main-->
   <main role="main" class="row l-main">
     <div class="<?php print $main_grid; ?> main columns">
       <div class="main-inner">
+        <div id="logo">
+        <?php if (!$is_front): ?>
+          <img src="/sites/all/themes/custom/Boushh/assets/images/logo-bw.png" alt="Deluxe Exchange Conference 2014" />
+        <?php else: ?>
+          <img src="/sites/all/themes/custom/Boushh/assets/images/logo.png" alt="Deluxe Exchange Conference 2014" />
+        <?php endif; ?>
+        </div>
 
         <a id="main-content"></a>
 

@@ -16,3 +16,17 @@ h3 {
 	text-transform: uppercase;
 	margin-bottom: rem-calc(3);
 }
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi){ 
+	html {
+		font-size: 92%;
+	}
+}
+
+@media #{$medium-up} {
+	html {
+		font-size: 100%;
+	}
+}
