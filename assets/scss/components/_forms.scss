@@ -206,10 +206,13 @@ div.vertical-tabs{
       a{
         color:#7f7f7f;
         line-height:rem-calc(20);
+        padding: 1em;
 
         strong {
           font-family: 'Ropa Sans';
           color: #bbb;
+          font-weight: 500;
+          letter-spacing: 0.05em;
           text-transform: uppercase;
           font-size: rem-calc(13);
         }
@@ -359,6 +362,13 @@ span.prefix, label.prefix {
 
 .form-textarea-wrapper {
   margin-bottom: rem-calc(5);
+}
+form input[type="file"], 
+form input[type="checkbox"], 
+form input[type="radio"] {
+  margin: 0;
+  position: relative;
+  z-index: 200;
 }
 
 
