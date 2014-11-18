@@ -43,6 +43,15 @@
 	  }
 	};
 
+	Drupal.behaviors.stickySide = {
+    attach: function (context, settings) {
+
+      $('.page-header').waypoint('sticky', {
+        offset: 45
+      });
+      
+    }
+  };
 
   // Drupal.behaviors.formElements = {
   //   attach: function(context, settings) {
