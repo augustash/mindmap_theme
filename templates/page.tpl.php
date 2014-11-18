@@ -169,10 +169,8 @@
     <!--/.footer-->
   <?php endif; ?>
 
-  <div class="l-copyright row">
-    <div id="copyright" class="large-12 columns">
+  <div class="copyright row">
       <small><?php print $copyright; ?></small>
-    </div>
   </div>
 
   <?php if ($messages && $fett_messages_modal): print $messages; endif; ?>

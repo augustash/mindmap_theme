@@ -45,13 +45,20 @@
 	}
 }
 
+
+// idea view modal
+.view-mindmap-elements.view-display-id-block_3 {
+
+}
+
 // idea view
 .view-mindmap-elements.view-display-id-block_1 {
 
 }
 
 .view-mindmap-elements.view-display-id-page_1,
-.view-mindmap-elements.view-display-id-block_1 {
+.view-mindmap-elements.view-display-id-block_1,
+.view-mindmap-elements.view-display-id-block_3 {
 	tr {
 		&:hover {
 			.color:after {
@@ -72,6 +79,7 @@
 			border: 1px solid lighten($dkgray, 5%);
 			padding: rem-calc(6 10);
 			background: darken($dkgray, 3%);
+			transition: all .3s;
 			&:before {
 				font: normal normal normal 14px/1 FontAwesome;
 				display: inline-block;
