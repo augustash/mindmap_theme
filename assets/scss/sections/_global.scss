@@ -239,11 +239,13 @@ table {
       margin: 1% 0 5%;
       max-width: 100%;
 
-      .block-views-mindmap-elements-block-5 {
+      .block-views-mindmap-elements-block-5,
+      .block-views-mindmap-elements-block-6 {
         display: block;
         position: relative;
         float: left;
         width: 50%;
+        padding: 0 2%;
       }
     }
   }
