@@ -1,0 +1,1 @@
+<a href="/admin/structure/entity-type/mindmap/category/add" title="Add Category" class="button right add"><i class="fa fa-plus"></i> Add Category</a>

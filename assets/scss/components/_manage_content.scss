@@ -15,12 +15,26 @@
 }
 
 // category view
+.page-manage-categories {
+	.button.add {
+		margin-bottom: rem-calc(15);
+	}
+}
 .view-mindmap-elements.view-display-id-page_1 {
+	#edit-select {
+		border: 0;
+		float: left;
+		padding: 0;
+		margin: rem-calc(0 0 15)
+	}
 	.views-field-title {
 		p {
 			color: #222;
     		color: rgba(34,34,34,.75);
 		}
+	}
+	.views-field-nothing-1 {
+		min-width: 200px;
 	}
 }
 
@@ -79,14 +93,12 @@
 	.views-field-nothing {
 		min-width: 140px;
 	}
-	.views-field-nothing-1 {
-		min-width: 190px;
-	}
 	.views-field-title {
 		.icon,
 		.cat-desc {
 			display: inline-block;
 			vertical-align: middle;
+			margin-left: -4px;
 		}
 		.cat-desc {
 			width: 90%;
