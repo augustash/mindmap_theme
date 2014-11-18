@@ -99,7 +99,7 @@ table {
     font-size:rem-calc(26);
     font-family:$font_custom;
     margin:0;
-    padding:rem-calc(20 15);
+    padding:rem-calc(15);
     text-transform: uppercase;
     font-weight:400;
     color:#111;
@@ -585,7 +585,7 @@ table {
 #logo {
   position: absolute;
   right: rem-calc(15);
-  top: rem-calc(15);
+  top: rem-calc(10);
   text-align: left;
   width: 100%;
   padding-left: rem-calc(15);
