@@ -21,6 +21,50 @@
 	}
 }
 
+
+// dashboard main & sub idea views
+.block-views-mindmap-elements-block-5,
+.block-views-mindmap-elements-block-6 {
+	table {
+		margin-bottom: rem-calc(20);
+		caption {
+			padding: 0 5px;
+			height: rem-calc(40);
+			line-height: rem-calc(40);
+			overflow: hidden;
+			text-align: left;
+			color: #fff;
+			font-weight: 400;
+			font-size: rem-calc(13);
+			img {
+				width: 30px;
+				opacity: .65;
+				margin-right: 4px;
+			}
+		}
+	}
+	.view-header {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		a {
+			width: 36px;
+			height: 36px;
+			line-height: 36px;
+			background: darken($dkgray, 3%);
+			border: 1px solid $primary-color;
+			border-radius: 18px;
+			display: block;
+			text-align: center;
+			color: #fff;
+			&:hover {
+				background: #000;
+			}
+		}
+	}
+}
+
+
 // dashboard main ideas
 .block-views-mindmap-elements-block-5 {
 	td.category {

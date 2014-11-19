@@ -56,12 +56,23 @@
     Drupal.behaviors.colorSample = {
     	attach: function (context, settings) {
      		
+     		// category view sample
      		$('.views-field-title .icon').each(function() {
      			var colorcode = $(this).find('.color > div').css('backgroundColor');
 
      			$(this).wrap('<div class="icon" style="background-color:' + colorcode + '" />');
 
      			$(this).find('.color').detach();
+
+     		});
+
+     		// dashboard table groupings
+     		$('.view-mindmap-elements caption').each(function() {
+     			var colorcode = $(this).find('div').css('backgroundColor');
+
+     			$(this).css('background-color', colorcode);
+
+     			$(this).find('div').detach();
 
      		});
 
