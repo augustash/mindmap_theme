@@ -64,7 +64,19 @@
      			$(this).find('.color').detach();
 
      		});
-     			
+
+     		$('#edit-field-category-und .form-item').each(function() {
+     		 	var colorcode = $(this).find('.color').text();
+
+     		 	$(this).wrap('<div class="icon" style="background-color:' + colorcode + '" />');
+
+     		 	$(this).find('.color').detach();
+
+     		});
+
+			$('#edit-field-category-und .form-item label').click(function() {
+			   		$(this).parent().parent().addClass('active');
+			});     			
      	}
     };
 
