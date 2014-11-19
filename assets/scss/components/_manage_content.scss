@@ -379,6 +379,33 @@
 	.views-exposed-form .views-exposed-widget.views-submit-button {
 		padding-right: 0;
 	}
+	.views-exposed-widgets {
+		position: relative;
+	}
+	#edit-submit-mindmap-elements {
+		text-indent: -9999px;
+		white-space: nowrap;
+		position: absolute;
+		width: 50px;
+		padding: 0;
+		top: 0;
+		right: 0;
+		background: transparent;
+		.fa-save {
+			text-indent: 0;
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			margin-top: -9px;
+			margin-right: -9px;
+			color: $primary-color;
+			font-size: 18px;
+		}
+		.fa-save:before {
+			content: "\f002";
+			text-indent: 0;
+		}
+	}
 }
 
 // ideas page
