@@ -203,7 +203,8 @@
 }
 
 // idea view
-.view-mindmap-elements.view-display-id-block_1 {
+.view-mindmap-elements.view-display-id-block_1,
+.view-mindmap-elements.view-display-id-block_7 {
 	.view-filters {
 		float: right;
 	}
@@ -235,7 +236,11 @@
 		}
 	}
 }
-#views-exposed-form-mindmap-elements-block-1 {
+
+
+#views-exposed-form-mindmap-elements-block-1,
+#views-exposed-form-mindmap-elements-block-7,
+#views-exposed-form-mindmap-elements-block-2 {
 	.views-exposed-widgets:before {
 		content: "Filter";
 		display: inline-block;
@@ -249,11 +254,23 @@
 	}
 }
 
+.view-mindmap-elements.view-display-id-block_2 {
+	.view-filters {
+		float: right;
+	}
+	#edit-field-published-value-1-wrapper label {
+		margin-right: 0;
+	}
+}
+
+
 
 // shared view styles
 .view-mindmap-elements.view-display-id-page_1,
 .view-mindmap-elements.view-display-id-block_1,
-.view-mindmap-elements.view-display-id-block_3 {
+.view-mindmap-elements.view-display-id-block_3,
+.view-mindmap-elements.view-display-id-block_7,
+.view-mindmap-elements.view-display-id-block_2 {
 	#edit-select {
 		border: 0;
 		float: left;
@@ -305,6 +322,12 @@
 }
 
 .view-mindmap-elements {
+	td.title {
+		h3 {
+			text-transform: none;
+			letter-spacing: .02em;
+		}
+	}
 	.edit-links {
 		a {
 			display: block;
