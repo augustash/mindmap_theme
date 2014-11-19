@@ -21,6 +21,50 @@
 	}
 }
 
+// dashboard main ideas
+.block-views-mindmap-elements-block-5 {
+	td.category {
+		width: 1%;
+		position: relative;
+		text-align: center;
+		font-size: rem-calc(12);
+		text-transform: uppercase;
+		letter-spacing: .03em;
+		.color {
+			margin-bottom: 5px;
+			display: inline-block;
+			div {
+				width: 80px !important;
+				height: 80px !important;
+				border-radius: 40px;
+			}
+		}
+		img {
+			position: absolute;
+			width: 50px;
+			left: 50%;
+			margin-left:-25px;
+			margin-top: 13px;
+		}
+	}
+	td.operations {
+		width: 100px;
+	}
+	td.status {
+		width: 1%;
+	}
+}
+
+// dashboard sub ideas
+.block-views-mindmap-elements-block-6 {
+	td.operations {
+		width: 100px;
+	}
+	td.status {
+		width: 1%;
+	}
+}
+
 // category view
 .page-manage-categories {
 	.button.add {
@@ -28,10 +72,10 @@
 	}
 }
 .view-mindmap-elements.view-display-id-page_1 {
-	.views-field-nothing-1 {
+	td.related {
 		min-width: 180px;
 	}
-	td.views-field-title {
+	td.title {
 		padding-top: 0;
 		padding-bottom: 0;
 		> .icon,
@@ -103,10 +147,11 @@
 	.view-filters {
 		float: right;
 	}
-	.views-field-nothing-1 {
+	td.related {
 		min-width: 200px;
 	}
-	td.views-field-field-icon-1 {
+	td.category {
+		min-width: 120px;
 		position: relative;
 		text-align: center;
 		font-size: rem-calc(12);
@@ -128,9 +173,6 @@
 			margin-left:-25px;
 			margin-top: 13px;
 		}
-	}
-	td.category {
-		min-width: 120px;
 	}
 }
 #views-exposed-form-mindmap-elements-block-1 {
@@ -162,11 +204,15 @@
 			display: none;
 		}
 		&:after {
-			content: "\f063";
-			font: normal normal normal 13px/1 FontAwesome;
+			content: "";
 			display: inline-block;
 			position: absolute;
-			bottom: -17px;
+			bottom: -13px;
+			width: 0;
+			height: 0;
+			border-top: 14px solid darken($dkgray, 3%);
+			border-left: 9px solid transparent;
+			border-right: 9px solid transparent;
 			left: 10px;
 		}
 	}
@@ -178,6 +224,27 @@
 			}
 		}
 	}
+	.button.secondary {
+		height: auto;
+		line-height: 1.6;
+		font-size: rem-calc(13);
+		padding: rem-calc(6 15);
+		margin: 0;
+	}
+	td.operations {
+		min-width: 140px;
+	}
+	td.title {
+		h3 {
+    		color: #fff;
+		}
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.view-mindmap-elements {
 	.edit-links {
 		a {
 			display: block;
@@ -206,27 +273,7 @@
 			}
 		}
 	}
-	.button.secondary {
-		height: auto;
-		line-height: 1.6;
-		font-size: rem-calc(13);
-		padding: rem-calc(6 15);
-		margin: 0;
-	}
-	.views-field-nothing {
-		min-width: 140px;
-	}
-	.views-field-title {
-		h3 {
-    		color: #fff;
-		}
-		p {
-			margin: 0;
-		}
-	}
 }
-
-
 
 // ideas quicktabs
 .block-quicktabs-manage-ideas {

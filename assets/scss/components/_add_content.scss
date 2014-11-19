@@ -4,8 +4,9 @@
 			padding: 0 2%;
 
 			label {
-				font-weight: bold;
-				font-size: 16px; 
+				font-size: rem-calc(14);
+				letter-spacing: .04em;
+				text-transform: uppercase;
 			}
 			
 			fieldset {
