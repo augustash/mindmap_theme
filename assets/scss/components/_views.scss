@@ -52,8 +52,8 @@
   .label{
     font-family:$font_custom;
     background:none;
-    color:#7f7f7f;
     font-weight:700;
+    color: $text;
     text-transform: uppercase;
   }
 }
@@ -329,9 +329,11 @@ html.js fieldset.collapsed .fieldset-legend {
 #views-ajax-popup #views-ajax-title {
   padding-right: 30px;
 }
-
-.views-display-setting .label, .views-display-setting .views-ajax-link {
+.views-display-setting .views-ajax-link {
   color: lighten($text, 25%);
+  &:hover {
+    color: #fff;
+  }
 }
 .views-displays {
   padding-bottom: 12px;

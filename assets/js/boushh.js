@@ -44,14 +44,29 @@
 	};
 
 	Drupal.behaviors.stickySide = {
-    attach: function (context, settings) {
+    	attach: function (context, settings) {
 
-      $('.page-header').waypoint('sticky', {
-        offset: 45
-      });
+     		$('.page-header').waypoint('sticky', {
+        		offset: 45
+      		});
       
-    }
-  };
+     	}
+    };
+
+    Drupal.behaviors.colorSample = {
+    	attach: function (context, settings) {
+     		
+     		$('.views-field-title .icon').each(function() {
+     			var colorcode = $(this).find('.color > div').css('backgroundColor');
+
+     			$(this).wrap('<div class="icon" style="background-color:' + colorcode + '" />');
+
+     			$(this).find('.color').detach();
+
+     		});
+     			
+     	}
+    };
 
   // Drupal.behaviors.formElements = {
   //   attach: function(context, settings) {

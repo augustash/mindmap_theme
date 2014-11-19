@@ -48,7 +48,7 @@ div.warning, table tr.warning {
 
 // table styling
 table {
-  border-color: darken($dkgray, 3%);
+  border: 2px solid darken($dkgray, 3%);
   margin-bottom: 0;
   thead {
     tr,
@@ -71,15 +71,23 @@ table {
   }
   tr.even,
   tr.odd {
-    border-bottom: 0;
+    border-bottom: 2px solid darken($dkgray, 3%);
   }
-  tr.alt,
+  tr.even,
   tr:nth-of-type(even) {
+    transition: background .3s;
     background: $dkgray image-url('noise.png') repeat;
+    &:hover {
+      background-color: darken($dkgray, 3%);
+    }
   }
   tr.odd,
   tr:nth-of-type(odd) {
+    transition: background .3s;
     background: darken($dkgray, 2%) image-url('noise.png') repeat;
+    &:hover {
+      background-color: darken($dkgray, 5%);
+    }
   }
   tbody {
     border-top: 0;
@@ -257,7 +265,7 @@ table {
   }
 }
 
-.views-field-field-published {
+td.views-field-field-published {
   font-style: italic;
   font-size: rem-calc(13);
 }

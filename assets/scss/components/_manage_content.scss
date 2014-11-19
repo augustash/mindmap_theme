@@ -34,12 +34,6 @@
 		padding: 0;
 		margin: rem-calc(0 0 15);
 	}
-	.views-field-title {
-		p {
-			color: #222;
-    		color: rgba(34,34,34,.75);
-		}
-	}
 	.views-field-nothing-1 {
 		min-width: 180px;
 	}
@@ -109,14 +103,15 @@
 		min-width: 140px;
 	}
 	.views-field-title {
-		.icon,
+		padding: 0 1.5%;
+		> .icon,
 		.cat-desc {
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: -4px;
 		}
 		.cat-desc {
-			width: 90%;
+			width: 80%;
 			margin-left: -4px;
 			position: relative;
 			z-index: 10;
@@ -129,12 +124,17 @@
 			margin: 0;
 		}
 		.icon {
-			width: 10%;
+			height: 100%;
+		}
+		> .icon {
+			max-width: 20%;
 			img {
 				position: relative;
 				z-index: 10;
-				margin: 10px;
 			}
+		}
+		.icon .icon {
+			padding: rem-calc(25);
 		}
 		.color {
 			height: 100%;
