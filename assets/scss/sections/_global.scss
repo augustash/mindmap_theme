@@ -229,46 +229,6 @@ table {
     }
   }
 }
-.front {
-  .page {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    max-width: 620px;
-    position: relative;
-
-    .main-inner {
-      margin: 1% 0 5%;
-      max-width: 620px;
-    }
-  }
-}
-.front.logged-in {
-  .page {
-    display: block;
-    float: none;
-    margin: 0 4% 1%;
-    max-width: 100%;
-    position: relative;
-
-    .main-inner {
-      margin: 1% 0 5%;
-      max-width: 100%;
-
-      .block-views-mindmap-elements-block-5,
-      .block-views-mindmap-elements-block-6 {
-        display: block;
-        position: relative;
-        float: left;
-        width: 50%;
-        padding: 0 1% 0 0;
-      }
-      .block-views-mindmap-elements-block-6 {
-        padding: 0 0 0 1%;
-      }
-    }
-  }
-}
 
 td.views-field-field-published {
   font-style: italic;
@@ -601,36 +561,6 @@ td.views-field-field-published {
       }
     }
   }
-}
-#valet-submit {
-  background: image-url('valet-submit.png');
-  width: 60px;
-  height: 60px;
-  right: 18px;
-  top: 18px;
-}
-
-#logo {
-  position: absolute;
-  right: rem-calc(15);
-  top: rem-calc(10);
-  text-align: left;
-  width: 100%;
-  padding-left: rem-calc(15);
-  max-width: 200px;
-  transition: .3s all;
-  @media (-webkit-min-device-pixel-ratio: 1.25), 
-    (min-resolution: 120dpi){ 
-      max-width: 225px;
-  }
-  a {
-    display: block;
-  }
-}
-
-.page {
-  padding: rem-calc(80 0 40);
-  position: relative;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
