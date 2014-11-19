@@ -287,8 +287,8 @@ button, .button, button.secondary, .button.secondary, form input[type="submit"] 
   font-weight: 600;
   background-color: $primary-color;
   color: $dkgray;
-  height: 40px;
-  line-height: 40px;
+  height: rem-calc(40);
+  line-height: rem-calc(40);
   padding: rem-calc(0 30);
   border: 0;
   &:hover, &:focus {
@@ -388,8 +388,8 @@ a.sbSelector {
   width: 100%;
   margin: 0;
   padding: rem-calc(0 10);
-  height: 40px;
-  line-height: 40px;
+  height: rem-calc(40);
+  line-height: rem-calc(40);
   font-size: 13px;
   font-weight: 100;
   text-transform: uppercase;
