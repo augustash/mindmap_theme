@@ -74,9 +74,14 @@
 
      		});
 
-			$('#edit-field-category-und .form-item label').click(function() {
-			   		$(this).parent().parent().addClass('active');
-			});     			
+			$('#edit-field-category-und').click(function() {
+				if($('#edit-field-category-und input:radio:checked').length > 0){
+					$('#edit-field-category-und label:hover').parent().parent().addClass('active');
+				}else{
+				  $('#edit-field-category-und label').parent().parent().removeClass('active');
+				}
+			});     
+						
      	}
     };
 
