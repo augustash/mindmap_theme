@@ -92,6 +92,7 @@
 
      		});
 
+     		// category picker wrap
      		$('#edit-field-category-und .form-item').each(function() {
      		 	var colorcode = $(this).find('.color').text();
 
@@ -101,13 +102,14 @@
 
      		});
 
-			$('#edit-field-category-und').click(function() {
-				if($('#edit-field-category-und input:radio:checked').length > 0){
-					$('#edit-field-category-und label:hover').parent().parent().addClass('active');
-				}else{
-				  $('#edit-field-category-und label').parent().parent().removeClass('active');
-				}
-			});     
+     		// give current category active class
+			$('#edit-field-category-und').find('input:checked').parents('.icon').addClass('active');
+
+			// swap active classes on click
+			$('#edit-field-category-und label').click(function() {
+				$('#edit-field-category-und .icon').removeClass('active');
+				$(this).parents('.icon').addClass('active');
+			});   
 						
      	}
     };

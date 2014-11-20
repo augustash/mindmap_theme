@@ -47,6 +47,8 @@
 				width: 30px;
 				opacity: .65;
 				margin-right: 4px;
+				position: relative;
+				top: -2px;
 			}
 		}
 	}
@@ -469,6 +471,16 @@
 		background: lighten($dkgray, 5%);
 	}
 }
+
+// published
+.published .Published:before {
+	content: "\f00c";
+	font: normal normal normal 12px/1 FontAwesome;
+	display: inline-block;
+	margin-right: 3px;
+	color: #58b540;
+}
+
 
 // global unique to DC
 #logo {
