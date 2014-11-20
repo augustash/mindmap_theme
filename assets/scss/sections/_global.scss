@@ -1,7 +1,11 @@
+html {
+  overflow-y: auto;
+}
 body{
   background-color: #111;
   background-image: image-url('bg.png');
   background-repeat: repeat;
+  overflow-y: auto;
 }
 
 
@@ -569,4 +573,3 @@ div.alert-box{
 html.exo-exists #exo-page{
   background: $body-bg;
 }
-
