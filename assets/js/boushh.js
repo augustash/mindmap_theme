@@ -120,6 +120,16 @@
      	}
     };
 
+    // this is useless until we can stop tab trimming
+  //   Drupal.behaviors.viewsTabs = {
+  //   	attach: function (context, settings) {
+		// 	$('#views-display-menu-tabs > li').each(function() {
+		// 		var title = $(this).text();
+		// 		$(this).attr('title', title);
+		// 	});
+		// }
+  //   };
+
   // Drupal.behaviors.formElements = {
   //   attach: function(context, settings) {
   //   	$('input.form-checkbox').before('<i class="fa fa-square-o cust-checkbox"></i>');

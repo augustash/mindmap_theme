@@ -90,17 +90,11 @@
     <div class="<?php print $main_grid; ?> main columns">
       <div class="main-inner">
         <div class="page-header">
-          <?php if ($title && !$is_front): ?>
-            <?php print render($title_prefix); ?>
+
             <h1 id="page-title" class="title"><?php print $title; ?></h1>
-            <?php print render($title_suffix); ?>
-          <?php endif; ?>
+
           <div id="logo">
-            <?php if (!$is_front): ?>
               <a href="/"><img src="/sites/all/themes/custom/Boushh/assets/images/logo-bw.png" alt="Deluxe Exchange Conference 2014" /></a>
-            <?php else: ?>
-              <a href="/"><img src="/sites/all/themes/custom/Boushh/assets/images/logo.png" alt="Deluxe Exchange Conference 2014" /></a>
-            <?php endif; ?>
           </div>
         </div>
 
