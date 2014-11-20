@@ -53,6 +53,22 @@
      	}
     };
 
+    Drupal.behaviors.searchPlaceholder = {
+    	attach: function (context, settings) {
+		    $('#views-exposed-form-mindmap-elements-block-1 #edit-title').attr("placeholder","Search by title");
+      		$('#views-exposed-form-mindmap-elements-block-7 #edit-title').attr("placeholder","Search by title");
+     		$('#views-exposed-form-mindmap-elements-block-2 #edit-title').attr("placeholder","Search by title or Name");
+     	}
+    };
+
+    Drupal.behaviors.anyOptions = {
+    	attach: function (context, settings) {
+			$('#views-exposed-form-mindmap-elements-block-1 .sbSelector').text('By Category');
+			$('#views-exposed-form-mindmap-elements-block-7 .sbSelector').text('By Category');
+			$('#views-exposed-form-mindmap-elements-block-2 .sbSelector').text('By Category');
+		}
+    };
+
     Drupal.behaviors.colorSample = {
     	attach: function (context, settings) {
      		
