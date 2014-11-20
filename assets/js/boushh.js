@@ -57,7 +57,7 @@
     	attach: function (context, settings) {
 		    $('#views-exposed-form-mindmap-elements-block-1 #edit-title').attr("placeholder","Search by title");
       		$('#views-exposed-form-mindmap-elements-block-7 #edit-title').attr("placeholder","Search by title");
-     		$('#views-exposed-form-mindmap-elements-block-2 #edit-title').attr("placeholder","Search by title or Name");
+     		$('#views-exposed-form-mindmap-elements-block-2 #edit-combine').attr("placeholder","Search by title or Name");
      	}
     };
 
