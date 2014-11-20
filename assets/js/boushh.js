@@ -121,14 +121,21 @@
     };
 
     // this is useless until we can stop tab trimming
-  //   Drupal.behaviors.viewsTabs = {
-  //   	attach: function (context, settings) {
-		// 	$('#views-display-menu-tabs > li').each(function() {
-		// 		var title = $(this).text();
-		// 		$(this).attr('title', title);
-		// 	});
-		// }
-  //   };
+    Drupal.behaviors.viewsTabs = {
+    	attach: function (context, settings) {
+			$('#views-display-menu-tabs > li').each(function() {
+				var title = $(this).text();
+				$(this).attr('title', title);
+			});
+		}
+    };
+
+    Drupal.behaviors.formElements = {
+    attach: function(context, settings) {
+    	$('input[type="checkbox"]').wrap('<span class="checkbox-wrap" />');
+    	$('input[type="checkbox"]').after('<i class="fa fa-check checkbox-check"></i>');
+  	}
+  };
 
   // Drupal.behaviors.formElements = {
   //   attach: function(context, settings) {

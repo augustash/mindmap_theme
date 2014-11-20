@@ -33,7 +33,7 @@
 	.view-header {
 		position: absolute;
 		top: 2px;
-		right: 15px;
+		right: 0;
 		a {
 			width: 36px;
 			height: 36px;
@@ -62,6 +62,9 @@
 
 // dashboard main ideas
 .block-views-mindmap-elements-block-5 {
+	.view-header {
+		right: 15px;
+	}
 	td.category {
 		width: 1%;
 		position: relative;
@@ -273,14 +276,6 @@
 
 
 // shared view styles
-.view-mindmap-elements.view-display-id-page_1,
-.view-mindmap-elements.view-display-id-block_1,
-.view-mindmap-elements.view-display-id-block_3,
-.view-mindmap-elements.view-display-id-block_7,
-.view-mindmap-elements.view-display-id-block_2 {
-
-}
-
 .view-mindmap-elements {
 	table {
 		caption {
@@ -324,6 +319,19 @@
 		}
 		p {
 			margin: 0;
+		}
+	}
+	td.likes {
+		min-width: 60px;
+		text-transform: uppercase;
+		font-size: rem-calc(12);
+		letter-spacing: .04em;
+		text-align: center;
+		span {
+			font-size: rem-calc(30);
+			display: block;
+			margin-bottom: rem-calc(8);
+			color: lighten($text, 25%);
 		}
 	}
 	.view-filters {
@@ -603,12 +611,11 @@ td.views-field-field-published {
 
 .block-block-4 {
 	max-width: 700px;
-	margin: 0 auto;
+	margin: 20px auto 40px;
 	text-align: center;
 	padding: rem-calc(20);
 	background: darken($dkgray, 5%);
 	border: 1px solid lighten($dkgray, 5%);
-	margin-bottom: rem-calc(40);
 }
 #user-login-form {
 	div.item-list {
