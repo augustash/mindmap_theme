@@ -91,7 +91,8 @@
       <div class="main-inner">
         <div class="page-header">
 
-            <h1 id="page-title" class="title"><?php print $title; ?></h1>
+            <?php if(user_is_logged_in()):?><h1 id="page-title" class="title"><?php print $title; ?></h1><?php endif; ?>
+            <?php if(!user_is_logged_in()):?><h1 id="page-title" class="title"><i class="fa fa-sign-in"></i> Log In</h1><?php endif; ?>
 
           <div id="logo">
               <a href="/"><img src="/sites/all/themes/custom/Boushh/assets/images/logo-bw.png" alt="Deluxe Exchange Conference 2014" /></a>
