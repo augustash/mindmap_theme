@@ -624,6 +624,15 @@ td.views-field-field-published {
 	}
 }
 
+// remove admin buttons
+.front,
+.page-node-2,
+.page-node-3 {
+	.ops-bar {
+		display: none;
+	}
+}
+
 // custom valet submit
 #valet-submit {
   background: image-url('valet-submit.png');
