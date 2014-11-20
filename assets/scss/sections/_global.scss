@@ -406,14 +406,17 @@ table {
   }
 }
 
-.alert-box{
+div.alert-box{
   margin: 0 0 1rem;
   text-align: center;
   font-size: 20px;
   text-shadow: 0 0 5px #015C1F;
   color: #fff;
-  border-radius: 33px;
   box-shadow: 0 1px 10px #000;
+
+  a {
+    font-weight: 400;
+  }
 
   ul{
     margin:0;
@@ -425,10 +428,9 @@ table {
   }
 
   &.success{
-    border: 5px solid #016E25;
     background-color: #04A63A;
     a{
-      color:#6f8c64;
+      color: #fff;
     }
   }
 
@@ -437,16 +439,15 @@ table {
     background:#ffe9db;
     color:#615042;
     a{
-      color:#8c5e40;
+      color:#fff;
     }
   }
 
   &.alert{
-    border: 5px solid #AD0900;
     background-color: #ED3023;
     text-shadow: 0 0 5px #AD0900;
     a{
-      color:#8c5251;
+      color:#fff;
     }
   }
 }

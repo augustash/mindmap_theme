@@ -497,7 +497,7 @@
 		li {
 			margin: 0;
 			display: inline-block;
-			padding: rem-calc(10 15);
+			padding: rem-calc(10 15 6);
 			text-transform: uppercase;
 			font-size: rem-calc(14);
 			letter-spacing: .03em;
@@ -506,9 +506,14 @@
 			border-width: 1px 1px 0 0;
 			border-style: solid;
 			border-color: lighten($dkgray, 10%);
-			transition: all .3s;
+			position: relative;
+			top: rem-calc(4);
+			transition: background, color .3s;
 			&:hover {
 				background-color: darken($dkgray, 10%);
+				a {
+					color: lighten($text, 25%);
+				}
 			}
 			&.first {
 				margin-left: 0;
@@ -520,6 +525,8 @@
 			}
 			&.active {
 				background: lighten($dkgray, 5%);
+				top: 0;
+				margin-top: 0;
 				margin-bottom: -1px;
 				padding-bottom: rem-calc(11);
 				&:hover {
@@ -621,6 +628,19 @@ td.views-field-field-published {
 				}
 			}
 		}
+	}
+	#edit-submit {
+		margin-bottom: 0;
+	}
+}
+.block-user-login {
+	h2.block-title {
+		display: none;
+	}
+}
+.front.not-logged-in {
+	.main-inner .main-content {
+		padding: rem-calc(20);
 	}
 }
 

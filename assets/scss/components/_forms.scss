@@ -196,7 +196,9 @@ div.vertical-tabs{
       &:hover{
         background: darken($dkgray, 10%);
         box-shadow: inset -6px 2px 8px -8px rgba(0, 0, 0, 0.75);
-        // box-shadow:none;
+        a {
+          color: lighten($text, 25%);
+        }
       }
 
       &:focus {
@@ -209,7 +211,6 @@ div.vertical-tabs{
         padding: 1em;
 
         strong {
-          color: #bbb;
           font-weight: 400;
           letter-spacing: 0.04em;
           text-transform: uppercase;

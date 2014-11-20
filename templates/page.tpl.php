@@ -67,10 +67,8 @@
 
   <?php if ($messages && !$fett_messages_modal): ?>
     <!--.l-messages -->
-    <section class="l-messages row">
-      <div class="large-12 columns">
+    <section class="messages row">
         <?php if ($messages): print $messages; endif; ?>
-      </div>
     </section>
     <!--/.l-messages -->
   <?php endif; ?>
