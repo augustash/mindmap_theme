@@ -132,8 +132,15 @@
 
     Drupal.behaviors.formElements = {
     attach: function(context, settings) {
-    	$('input[type="checkbox"]').wrap('<span class="checkbox-wrap" />');
+    	$('input[type="checkbox"]').wrap('<div class="checkbox-wrap" />');
+    	$('input[type="checkbox"]').before('<span class="psuedo-box" />');
     	$('input[type="checkbox"]').after('<i class="fa fa-check checkbox-check"></i>');
+
+    	$('input.vbo-table-select-all').click(function() {
+    		$(this).parents('table').find('input.vbo-select').each(function() {
+    			$(this).parent().find('.checkbox-check').toggleClass('active');
+    		});
+    	});
   	}
   };
 
