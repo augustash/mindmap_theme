@@ -471,10 +471,13 @@ input[type="checkbox"] {
   pointer-events: none;
   position: absolute;
   z-index: 3;
-  left: 0;
+  left: 1px;
   top: 0;
-  color: #58b540;
+  color: $primary-color;
   transition: opacity .2s;
+  &:before {
+    font-size: rem-calc(12);
+  }
   &.active {
     opacity: 1;
     background: transparent !important;

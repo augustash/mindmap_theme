@@ -141,8 +141,9 @@
     			$(this).parent().find('.checkbox-check').toggleClass('active');
     		});
     	});
-  	}
-  };
+      
+    	}
+    };
 
   // Drupal.behaviors.formElements = {
   //   attach: function(context, settings) {
