@@ -27,13 +27,13 @@
 .block-views-mindmap-elements-block-6 {
 	display: block;
   	position: relative;
-  	float: left;
-  	width: 50%;
-  	padding: 0 1% 0 0;
+  	// float: left;
+  	// width: 50%;
+  	// padding: 0 1% 0 0;
 	.view-header {
 		position: absolute;
-		top: 2px;
-		right: 0;
+		top: -65px;
+		right: -15px;
 		a {
 			width: 36px;
 			height: 36px;
@@ -62,9 +62,6 @@
 
 // dashboard main ideas
 .block-views-mindmap-elements-block-5 {
-	.view-header {
-		right: 15px;
-	}
 	td.category {
 		width: 1%;
 		position: relative;
@@ -115,11 +112,6 @@
 }
 
 // category view
-.page-manage-categories {
-	.button.add {
-		margin-bottom: rem-calc(15);
-	}
-}
 .view-mindmap-elements.view-display-id-page_1 {
 	td.related {
 		min-width: 175px;
@@ -344,7 +336,7 @@
 		border: 0;
 		float: left;
 		padding: 0;
-		margin: rem-calc(0 0 15);
+		margin: 0;
 		position: relative;
 		legend {
 			display: none;
@@ -425,7 +417,7 @@
 // ideas quicktabs
 .block-quicktabs-manage-ideas,
 .block-quicktabs-manage-sub-ideas {
-	padding-top: rem-calc(15);
+	padding-top: rem-calc(30);
 	h2.block-title {
 		display: none;
 	}
@@ -481,6 +473,13 @@
 			margin-bottom: 0;
 		}
 	}
+}
+
+
+// recently added quicktabs
+.block-quicktabs-recently-added-ideas {
+	width: 48%;
+	float: left;
 }
 
 // ideas page
@@ -570,6 +569,79 @@ td.views-field-field-published {
 	.Unpublished:before {
 		content: "\f05e";
 		color: #b23b1b;
+	}
+}
+
+// add buttons
+.button.add {
+	height: auto;
+	padding: rem-calc(10 35);
+}
+
+// dashboard count views
+.block-views-mindmap-elements-block-12,
+.block-views-mindmap-elements-block-13 {
+	display: none;
+}
+
+// total count block
+.block-block-5 {
+	padding: rem-calc(40);
+	float: left;
+	width: 46%;
+	margin: 0 3%;
+	.total-ideas,
+	.main-ideas,
+	.sub-ideas {
+		float: left;
+		position: relative;
+		text-align: center;
+		.info {
+			position: absolute;
+			top: 25%;
+			left: 0;
+			width: 100%;
+			color: $primary-color;
+			span {
+				font-size: rem-calc(13);
+				margin-top: rem-calc(5);
+				text-transform: uppercase;
+				letter-spacing: .03em;
+				color: $text;
+				display: block;
+			}
+		}
+	}
+	.total-ideas {
+		width: 52%;
+		img {
+			width: 100%;
+		}
+		.info {
+			font-size: rem-calc(90);
+			span {
+				
+			}
+		}
+	}
+	.main-ideas,
+	.sub-ideas {
+		width: 38%;
+		margin-left: 10%;
+	}
+	.main-ideas {
+		padding: 0 30px;
+		.info {
+			top: 20%;
+			font-size: rem-calc(50);
+		}
+	}
+	.sub-ideas {
+		padding: 20px 45px 0;
+		.info {
+			top: 30%;
+			font-size: rem-calc(30);
+		}
 	}
 }
 

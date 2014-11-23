@@ -5,7 +5,6 @@ body{
   background-color: #111;
   background-image: image-url('bg.png');
   background-repeat: repeat;
-  overflow-y: auto;
 }
 
 
@@ -110,6 +109,13 @@ table {
 
 .main-inner{
   background: $dkgray image-url('noise.png') repeat;
+  background: image-url('noise.png'), -moz-linear-gradient(left, #231f20 0%, #2f2a2b 50%, #231f20 100%); /* FF3.6+ */
+  background: image-url('noise.png'), -webkit-gradient(linear, left top, right top, color-stop(0%,#231f20), color-stop(50%,#2f2a2b), color-stop(100%,#231f20)); /* Chrome,Safari4+ */
+  background: image-url('noise.png'), -webkit-linear-gradient(left, #231f20 0%,#2f2a2b 50%,#231f20 100%); /* Chrome10+,Safari5.1+ */
+  background: image-url('noise.png'), -o-linear-gradient(left, #231f20 0%,#2f2a2b 50%,#231f20 100%); /* Opera 11.10+ */
+  background: image-url('noise.png'), -ms-linear-gradient(left, #231f20 0%,#2f2a2b 50%,#231f20 100%); /* IE10+ */
+  background: image-url('noise.png'), linear-gradient(to right, #231f20 0%,#2f2a2b 50%,#231f20 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#231f20', endColorstr='#231f20',GradientType=1 ); /* IE6-9 */
   border:1px solid #000;
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
@@ -149,7 +155,6 @@ table {
   }
 
   .main-content{
-    background: image-url("noise.png") repeat;
     padding:rem-calc(15);
 
     table{

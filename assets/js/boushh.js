@@ -145,6 +145,19 @@
     	}
     };
 
+
+    Drupal.behaviors.countStuff = {
+    attach: function(context, settings) {
+      var mainIdeas = $('.block-views-mindmap-elements-block-12 .main-idea').length;
+      var subIdeas = $('.block-views-mindmap-elements-block-13 .sub-idea').length;
+      var totalIdeas = mainIdeas + subIdeas;
+
+      $('.total-ideas .info').prepend(totalIdeas);
+      $('.main-ideas .info').prepend(mainIdeas);
+      $('.sub-ideas .info').prepend(subIdeas);
+      }
+    };
+
   // Drupal.behaviors.formElements = {
   //   attach: function(context, settings) {
   //   	$('input.form-checkbox').before('<i class="fa fa-square-o cust-checkbox"></i>');

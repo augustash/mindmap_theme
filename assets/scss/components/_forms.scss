@@ -291,6 +291,7 @@ button, .button, button.secondary, .button.secondary, form input[type="submit"] 
   line-height: rem-calc(40);
   padding: rem-calc(0 30);
   border: 0;
+  border-radius: 2px;
   &:hover, &:focus {
     background-color: darken($primary-color, 10%);
     color: #000;
@@ -311,6 +312,12 @@ button.tiny, .button.tiny {
   font-size: rem-calc(12);
 }
 
+.container-inline.form-wrapper {
+  button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
 
 // general form styles
 fieldset legend {
