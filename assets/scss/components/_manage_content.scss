@@ -57,6 +57,9 @@
 			}
 		}
 	}
+	td.title h3 {
+		font-size: rem-calc(16);
+	}
 }
 
 
@@ -478,7 +481,7 @@
 
 // recently added quicktabs
 .block-quicktabs-recently-added-ideas {
-	width: 48%;
+	width: 50%;
 	float: left;
 }
 
@@ -588,8 +591,8 @@ td.views-field-field-published {
 .block-block-5 {
 	padding: rem-calc(40);
 	float: left;
-	width: 46%;
-	margin: 0 3%;
+	width: 48%;
+	margin: 0 0 0 2%;
 	.total-ideas,
 	.main-ideas,
 	.sub-ideas {
@@ -686,8 +689,11 @@ td.views-field-field-published {
 	margin: 20px auto 40px;
 	text-align: center;
 	padding: rem-calc(20);
-	background: darken($dkgray, 5%);
+	background: rgba(#000,.3);
 	border: 1px solid lighten($dkgray, 5%);
+	p {
+		margin-bottom: 8px;
+	}
 }
 #user-login-form {
 	div.item-list {
