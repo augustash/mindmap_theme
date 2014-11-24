@@ -57,21 +57,21 @@
     	attach: function (context, settings) {
 		    $('#views-exposed-form-mindmap-elements-block-1 #edit-title').attr("placeholder","Search by title");
       		$('#views-exposed-form-mindmap-elements-block-7 #edit-title').attr("placeholder","Search by title");
-     		$('#views-exposed-form-mindmap-elements-block-2 #edit-combine').attr("placeholder","Search by title or Name");
+     		$('#views-exposed-form-mindmap-elements-block-2 #edit-combine').attr("placeholder","Search by title or name");
      		$('#views-exposed-form-mindmap-elements-block-9 #edit-title').attr("placeholder","Search by title");
       		$('#views-exposed-form-mindmap-elements-block-10 #edit-title').attr("placeholder","Search by title");
-     		$('#views-exposed-form-mindmap-elements-block-11 #edit-combine').attr("placeholder","Search by title or Name");
+     		$('#views-exposed-form-mindmap-elements-block-11 #edit-combine').attr("placeholder","Search by title or name");
      	}
     };
 
     Drupal.behaviors.anyOptions = {
     	attach: function (context, settings) {
-			$('#views-exposed-form-mindmap-elements-block-1 .sbSelector').text('By Category');
-			$('#views-exposed-form-mindmap-elements-block-7 .sbSelector').text('By Category');
-			$('#views-exposed-form-mindmap-elements-block-2 .sbSelector').text('By Category');
-			$('#views-exposed-form-mindmap-elements-block-9 .sbSelector').text('By Category');
-			$('#views-exposed-form-mindmap-elements-block-10 .sbSelector').text('By Category');
-			$('#views-exposed-form-mindmap-elements-block-11 .sbSelector').text('By Category');
+			$('#views-exposed-form-mindmap-elements-block-1 .sbSelector').text('By category');
+			$('#views-exposed-form-mindmap-elements-block-7 .sbSelector').text('By category');
+			$('#views-exposed-form-mindmap-elements-block-2 .sbSelector').text('By category');
+			$('#views-exposed-form-mindmap-elements-block-9 .sbSelector').text('By category');
+			$('#views-exposed-form-mindmap-elements-block-10 .sbSelector').text('By category');
+			$('#views-exposed-form-mindmap-elements-block-11 .sbSelector').text('By category');
 		}
     };
 
