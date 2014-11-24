@@ -96,7 +96,6 @@
 
 // dashboard sub ideas
 .block-views-mindmap-elements-block-6 {
-	padding: 0 0 0 1%;
 	td.operations {
 		width: 100px;
 	}
@@ -393,6 +392,7 @@
 			padding: rem-calc(6 10);
 			background: darken($dkgray, 3%);
 			transition: all .3s;
+			border-radius: 3px;
 			&:before {
 				font: normal normal normal 14px/1 FontAwesome;
 				display: inline-block;
